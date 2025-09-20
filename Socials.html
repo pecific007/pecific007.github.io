@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrashPortfolio-Programming</title>
+    <link
+      rel="icon"
+      href="Images/Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    :root {
+      --blue: rgb(43, 39, 255);
+      --purpwhite: rgb(255, 228, 255);
+      --blueViolet: rgb(137, 43, 226);
+      --ltblack: rgb(28, 27, 34);
+      --defHeight: 150px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      font-family: sans-serif;
+      font-size: 20px;
+      margin: auto;
+      transition: all ease-in-out 0.1s;
+      accent-color: var(--blueViolet);
+      color-scheme: dark;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: none;
+    }
+
+    body {
+      font-size: inherit;
+      background-image: radial-gradient(
+        circle,
+        rgba(137, 43, 226, 0.3) 1%,
+        var(--ltblack) 80%
+      );
+    }
+
+    .navbar {
+      background-color: rgba(28, 27, 34, 0.9);
+      width: 100%;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 20px;
+      box-shadow: 1px 2px 1px rgba(137, 43, 226, 0.5);
+      position: fixed;
+      z-index: 999;
+    }
+
+    .webname {
+      font-size: 50px;
+      font-style: italic;
+      font-family: Edwardian Script ITC;
+      font-weight: 800;
+      margin-right: 0;
+    }
+
+    .nav {
+      margin-left: 0;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    li {
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    li:hover {
+      scale: 115%;
+      background-color: var(--purpwhite);
+      color: black;
+    }
+
+    .high {
+      background-color: var(--blueViolet);
+      color: #fff;
+      box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.9);
+    }
+    .high:hover {
+      background-color: var(--blueViolet);
+      color: #fff;
+    }
+
+    .content {
+      padding: 10em;
+      /* width: 100%; */
+      /* height: 90.5vh; */
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .card {
+      width: fit-content;
+      display: flex;
+      gap: 5rem;
+      border: 3px solid var(--purpwhite);
+      padding: 100px;
+      border-radius: 5rem;
+      box-shadow: 0 0 50px rgba(255, 228, 255, 0.5);
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    .yt {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 40px;
+      background-color: var(--blueViolet);
+      border: 3px solid rgb(137, 43, 226);
+      border-radius: 2rem;
+    }
+
+    .yt:hover {
+      box-shadow: 0px 0px 20px rgba(255, 228, 255, 0.8);
+    }
+
+    .ytlogo {
+      height: 60px;
+    }
+
+    .iglogo {
+      height: 60px;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <div class="webname">Prashant</div>
+      <div class="nav">
+        <ul type="none">
+          <a href="Programming.html"><li>Programming</li></a>
+          <a href="3dart.html"><li>3D Artwork</li></a>
+          <li class="high">Socials</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="content">
+      <h1>Follow me on:</h1>
+      <div class="card">
+        <div class="yt">
+          <a href="https://youtube.com/@prash_rathod007">
+            <img
+              class="ytlogo"
+              src="Images/new-youtube-logo-logo-svgrepo-com.svg"
+            />
+            <p class="ytlink">Youtube: @prash_rathod007</p>
+          </a>
+        </div>
+        <div class="yt">
+          <a href="https://www.instagram.com/endframe_art/">
+            <img
+              class="iglogo"
+              src="Images/instagram-2016-logo-svgrepo-com.svg"
+            />
+            <p class="ytlink">Instagram: @endframe_art</p>
+          </a>
+        </div>
+        <div class="yt">
+          <a href="https://github.com/pecific007">
+            <img
+              class="iglogo"
+              src="Images/github-mark.svg"
+            />
+            <p class="ytlink">GitHub: @pecific007</p>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

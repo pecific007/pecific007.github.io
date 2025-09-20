@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrashPortfolio-Programming</title>
+    <link
+      rel="icon"
+      href="Images/Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <style>
+    :root {
+      --blue: rgb(43, 39, 255);
+      --purpwhite: rgb(255, 228, 255);
+      --blueViolet: rgb(137, 43, 226);
+      --ltblack: rgb(28, 27, 34);
+      --defHeight: 400px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      font-family: sans-serif;
+      font-size: 20px;
+      margin: auto;
+      transition: all ease-in-out 0.1s;
+      accent-color: var(--blueViolet);
+      color-scheme: dark;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: none;
+    }
+
+    body {
+      font-size: inherit;
+      background-image: radial-gradient(
+        circle,
+        rgba(137, 43, 226, 0.3) 1%,
+        var(--ltblack) 80%
+      );
+    }
+
+    .navbar {
+      background-color: rgba(28, 27, 34, 0.9);
+      width: 100%;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 20px;
+      box-shadow: 1px 2px 1px rgba(137, 43, 226, 0.5);
+      position: fixed;
+      z-index: 999;
+    }
+
+    .webname {
+      font-size: 50px;
+      font-style: italic;
+      font-family: Edwardian Script ITC;
+      font-weight: 800;
+      margin-right: 0;
+    }
+
+    .nav {
+      margin-left: 0;
+    }
+
+    .ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .li {
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .li:hover {
+      scale: 115%;
+      background-color: var(--purpwhite);
+      color: black;
+    }
+
+    .high {
+      background-color: var(--blueViolet);
+      color: #fff;
+      box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.9);
+    }
+    .high:hover {
+      background-color: var(--blueViolet);
+      color: #fff;
+    }
+
+    .content {
+      padding: 5em;
+      /* width: 100%; */
+      /* height: 90.5vh; */
+      display: grid;
+      gap: 4rem;
+    }
+
+    .know {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .lang {
+      border: 3px solid rgb(137, 43, 226);
+      border-radius: 1rem;
+      padding: 20px;
+      display: grid;
+    }
+
+    .lang:hover {
+      /* box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.9); */
+      box-shadow: 0px 0px 20px rgba(255, 228, 255, 0.9);
+    }
+
+    .edu {
+      display: flex;
+      gap: 10rem;
+      line-height: 30px;
+      padding: 50px;
+    }
+
+    .hub {
+      display: grid;
+      text-align: center;
+    }
+
+    .game {
+      font-size: 2em;
+      display: block;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: var(--blueViolet);
+      border: none;
+      border-radius: .5rem;
+      color: #fff;
+      padding: 10px 40px;
+      margin-top: 30px;
+    }
+    button:hover {
+      scale: 110%;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <div class="webname">Prashant</div>
+      <div class="nav">
+        <ul class="ul" type="none">
+          <li class="high li">Programming</li>
+          <a href="3dart.html"><li class="li">3D Artwork</li></a>
+          <a href="Socials.html"><li class="li">Socials</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="know">
+        <div class="lang">
+          <div class="name">
+            <!-- <h1 class="lang">C</h1> -->
+            <h1>C Language</h1>
+          </div>
+          <div class="progress">
+            <meter min="0" low="34" high="60" max="100" value="50">50%</meter>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="name">
+            <!-- <h1 class="lang">C</h1> -->
+            <h1>HTML</h1>
+          </div>
+          <div class="progress">
+            <meter min="0" low="34" high="60" max="100" value="50">50%</meter>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="name">
+            <!-- <h1 class="lang">C</h1> -->
+            <h1>CSS</h1>
+          </div>
+          <div class="progress">
+            <meter min="0" low="34" high="60" max="100" value="40">40%</meter>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="name">
+            <!-- <h1 class="lang">C</h1> -->
+            <h1>Bash</h1>
+          </div>
+          <div class="progress">
+            <meter min="0" low="34" high="60" max="100" value="25">25%</meter>
+          </div>
+        </div>
+        <div class="lang">
+          <div class="name">
+            <!-- <h1 class="lang">C</h1> -->
+            <h1>Lua</h1>
+          </div>
+          <div class="progress">
+            <meter min="0" low="34" high="60" max="100" value="15">15%</meter>
+          </div>
+        </div>
+      </div>
+
+      <h1 style="font-size: 50px">Currently Learning:</h1>
+
+      <div class="edu">
+        <div class="clg">
+          <h2>In College</h2>
+          <ul>
+            <li>C language</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>BootStrap</li>
+          </ul>
+        </div>
+        <div class="ext">
+          <h2>External Course: CS50</h2>
+          <ul>
+            <li>C language</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Flask</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hub">
+        <h1>
+          My Scratch Project - made using
+          <a
+            href="https://scratch.mit.edu"
+            style="font-weight: 900; text-decoration: underline"
+            >scratch.mit.edu</a
+          >
+          <h1 class="game">
+            The Crab Game
+          </h1>
+          <a href="https://scratch.mit.edu/projects/1169620812/">
+            <button>Play Now!</button>
+          </a>
+        </h1>
+      </div>
+    </main>
+  </body>
+</html>
