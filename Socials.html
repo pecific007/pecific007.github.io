@@ -43,6 +43,11 @@
       );
     }
 
+    body::selection {
+      background: var(--purpwhite);
+      color: var(--ltblack);
+    }
+
     .navbar {
       background-color: rgba(28, 27, 34, 0.9);
       width: 100%;
@@ -113,7 +118,7 @@
       padding: 100px;
       border-radius: 5rem;
       box-shadow: 0 0 50px rgba(255, 228, 255, 0.5);
-      background-image: radial-gradient(black 50%, rgba(43, 39, 255, 0.2));
+      background-image: radial-gradient(var(--ltblack) 50%, rgba(43, 39, 255, 0.2));
     }
 
     h1 {
@@ -186,4 +191,3 @@
     </main>
   </body>
 </html>
-
