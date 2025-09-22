@@ -43,6 +43,12 @@
       );
     }
 
+
+    body::selection {
+      background: var(--purpwhite);
+      color: var(--ltblack);
+    }
+
     .navbar {
       background-color: rgba(28, 27, 34, 0.9);
       width: 100%;
@@ -97,9 +103,8 @@
     .content {
       padding-top: 10em;
       height: max-content;
-      width: max-content;
-      /* display: grid;
-      grid-template-columns: 30rem; */
+      width: min-content;
+      grid-template-columns: 30rem;
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
@@ -299,5 +304,3 @@
     </main>
   </body>
 </html>
-
-
