@@ -1,8 +1,8 @@
 :root {
   --blue: #2c29ff;
   --purpwhite: #ffe5ff;
-  --blueViolet: #8a2ce2;
-  --ltblack: #1c1b22;
+  /* --blueViolet: #8a2ce2; */
+  --blueViolet: #6650ed;
   --defHeight: 400px;
 }
 
@@ -169,3 +169,4 @@ body::selection {
   padding: 50px;
   padding-top: 30px;
 }
+
