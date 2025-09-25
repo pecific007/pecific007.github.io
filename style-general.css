@@ -1,7 +1,8 @@
 :root {
   --blue: #2c29ff;
   --purpwhite: #ffe5ff;
-  --blueViolet: #8a2ce2;
+  /* --blueViolet: #8a2ce2; */
+  --blueViolet: #6650ed;
   --ltblack: #1c1b22;
 }
 
@@ -90,4 +91,3 @@ body::selection {
   background-color: var(--blueViolet);
   color: #fff;
 }
-
