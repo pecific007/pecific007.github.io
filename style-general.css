@@ -1,7 +1,7 @@
 :root {
   --blue: #2c29ff;
   --purpwhite: #ffe5ff;
-  /* --blueViolet: #8a2ce2; */
+  /* --violet: #8a2ce2; */
   --blueViolet: #6650ed;
   --ltblack: #1c1b22;
 }
@@ -26,6 +26,8 @@ a {
 }
 
 body {
+  padding-top: 5em;
+  padding-bottom: 5em;
   font-size: inherit;
   background-image: radial-gradient(
     circle,

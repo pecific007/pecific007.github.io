@@ -1,0 +1,104 @@
+* {
+  color-scheme: dark;
+}
+
+body {
+    width: fit-content;
+}
+
+.solSyst {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  background-image: radial-gradient(
+    circle at 13%,
+    rgba(0, 0, 0, 0)18%,
+    #fff 18.1%,
+    rgba(0, 0, 0, 0)18.2%,
+    rgba(0, 0, 0, 0)22%,
+    #fff 22.1%,
+    rgba(0, 0, 0, 0)22.2%,
+    rgba(0, 0, 0, 0)28.5%,
+    #fff 28.6%,
+    rgba(0, 0, 0, 0) 28.7%,
+    rgba(0, 0, 0, 0)35%,
+    #fff 35.1%,
+    rgba(0, 0, 0, 0)35.2%,
+    rgba(0, 0, 0, 0) 50%,
+    #fff 50.1%,
+    rgba(0, 0, 0, 0) 50.2%,
+    rgba(0, 0, 0, 0) 67.5%,
+    #fff 67.6%,
+    rgba(0, 0, 0, 0) 67.7%,
+    rgba(0, 0, 0, 0) 83%,
+    #fff 83.1%,
+    rgba(0, 0, 0, 0) 83.2%,
+    rgba(0, 0, 0, 0) 93%,
+    #fff 93.1%,
+    rgba(0, 0, 0, 0) 93.2%
+  );
+}
+
+.solSyst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0; */
+  /* overflow: hidden; */
+}
+
+.sun {
+  height: 400px;
+  padding: 10px 20px;
+  border-radius: 100%;
+  z-index: 999;
+}
+
+.obj {
+  scale: 100%;
+  transition: all ease-in-out 0.1s;
+}
+.obj:hover {
+  scale: 105%;
+}
+
+.merc {
+  height: 50px;
+  z-index: 999;
+}
+
+.ven {
+  height: 75px;
+  z-index: 999;
+}
+
+.ear {
+  height: 100px;
+  z-index: 999;
+}
+
+.mar {
+  height: 85px;
+  z-index: 999;
+}
+
+.jup {
+  height: 200px;
+  margin-left: 50px;
+  z-index: 999;
+}
+
+.sat {
+  height: 300px;
+  z-index: 999;
+}
+
+.ura {
+  height: 150px;
+  z-index: 999;
+}
+
+.nep {
+  height: 150px;
+  z-index: 999;
+}

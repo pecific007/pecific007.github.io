@@ -7,7 +7,8 @@
 }
 
 .content {
-  padding-top: 10em;
+  padding-top: 1em;
+  /* padding-bottom: 2em; */
   height: max-content;
   width: max-content;
   display: flex;
@@ -16,14 +17,16 @@
 }
 
 .card {
-  width: fit-content;
-  display: flex;
+  width: max-content;
+  display: grid;
+  grid-template-columns: 20rem 20rem;
   gap: 5rem;
   border: 3px solid var(--purpwhite);
   padding: 100px;
   border-radius: 5rem;
   box-shadow: 0 0 50px rgba(255, 228, 255, 0.5);
   background-image: radial-gradient(var(--ltblack) 50%, rgba(43, 39, 255, 0.2));
+  line-height: 30px;
 }
 
 h1 {
