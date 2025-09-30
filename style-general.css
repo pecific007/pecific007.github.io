@@ -12,7 +12,8 @@ html {
 
 * {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 1.06em;
+  /* font-size: 20px; */
   margin: auto;
   transition: all ease-in-out 0.1s;
   accent-color: var(--blueViolet);
@@ -26,12 +27,12 @@ a {
 }
 
 body {
-  padding-top: 5em;
+  padding-top: 7em;
   padding-bottom: 5em;
   font-size: inherit;
   background-image: radial-gradient(
     circle,
-    rgba(137, 43, 226, 0.3) 1%,
+    rgba(102, 80, 237, 0.3) 1%,
     var(--ltblack) 80%
   );
 }
@@ -42,15 +43,16 @@ body::selection {
 }
 
 .navbar {
-  background-color: rgba(28, 27, 34, 0.9);
+  background-color: rgba(28, 27, 34, 0.5);
   width: 100%;
   top: 0;
   display: flex;
   justify-content: space-around;
   padding: 10px 20px;
-  box-shadow: 1px 2px 1px rgba(137, 43, 226, 0.5);
+  box-shadow: 1px 2px 5px rgba(102, 80, 237, 0.5);
   position: fixed;
   z-index: 999;
+  backdrop-filter: blur(1rem);
 }
 
 .webname {
@@ -77,7 +79,7 @@ body::selection {
 }
 
 .li:hover {
-  scale: 115%;
+  scale: 110%;
   background-color: var(--purpwhite);
   color: black;
 }
@@ -92,4 +94,54 @@ body::selection {
 .high:hover {
   background-color: var(--blueViolet);
   color: #fff;
+}
+
+.btmbar {
+  background-color: var(--blueViolet);
+  position: fixed;
+  opacity: 0;
+  z-index: -99;
+  cursor: pointer;
+  width: 0px;
+}
+
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  .navbar {
+    width: 100vw;
+    text-align: center;
+    left: 0;
+  }
+
+  .webname {
+    margin-left: 30%;
+  }
+
+  .nav {
+    z-index: -99;
+    margin-left: 1000px;
+  }
+
+  .ul {
+    opacity: 0;
+  }
+
+.btmbar {
+  opacity: 1;
+  z-index: 999;
+  background-color: rgba(28, 27, 34, 0.5);
+  height: 3em;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  box-shadow: -1px -2px 5px rgba(102, 80, 237, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  backdrop-filter: blur(1rem);
+}
 }
