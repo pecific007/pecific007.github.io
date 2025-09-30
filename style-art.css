@@ -135,6 +135,7 @@
     font-size: 5em;
     box-sizing: border-box;
     padding: 10px;
+    display: grid;
   }
 
   :root {
@@ -183,5 +184,6 @@
     width: 260px;
   }
 }
+
 
 
