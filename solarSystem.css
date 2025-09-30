@@ -13,28 +13,28 @@ body {
   background-image: radial-gradient(
     circle at 13%,
     rgba(0, 0, 0, 0)18%,
-    #fff 18.1%,
+    #fff,
     rgba(0, 0, 0, 0)18.2%,
     rgba(0, 0, 0, 0)22%,
-    #fff 22.1%,
+    #fff,
     rgba(0, 0, 0, 0)22.2%,
     rgba(0, 0, 0, 0)28.5%,
-    #fff 28.6%,
+    #fff,
     rgba(0, 0, 0, 0) 28.7%,
     rgba(0, 0, 0, 0)35%,
-    #fff 35.1%,
+    #fff,
     rgba(0, 0, 0, 0)35.2%,
     rgba(0, 0, 0, 0) 50%,
-    #fff 50.1%,
+    #fff,
     rgba(0, 0, 0, 0) 50.2%,
     rgba(0, 0, 0, 0) 67.5%,
-    #fff 67.6%,
+    #fff,
     rgba(0, 0, 0, 0) 67.7%,
     rgba(0, 0, 0, 0) 83%,
-    #fff 83.1%,
+    #fff,
     rgba(0, 0, 0, 0) 83.2%,
     rgba(0, 0, 0, 0) 93%,
-    #fff 93.1%,
+    #fff,
     rgba(0, 0, 0, 0) 93.2%
   );
 }
@@ -178,3 +178,4 @@ body {
   }
 
 }
+
