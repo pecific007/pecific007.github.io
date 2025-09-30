@@ -87,8 +87,13 @@ body::selection {
 .high {
   background-color: var(--blueViolet);
   color: #fff;
-  box-shadow: 0px 0px 20px rgba(102, 80, 237, 0.9);
+  filter: drop-shadow(0px 0px 5px rgba(102, 80, 237, 0.9))
+          drop-shadow(1px 2px 4px rgba(0,0,0,1));
   cursor: pointer;
+}
+
+.raiseup {
+  transform: translateY(-10px);
 }
 
 .high:hover {
@@ -137,6 +142,8 @@ body::selection {
 
   .li {
     background-color: var(--purpwhite);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
   }
 
   .li:hover {
@@ -156,6 +163,7 @@ body::selection {
     z-index: 999;
     background-color: rgba(28, 27, 34, 0.5);
     height: 3em;
+    padding-top: 10px;
     bottom: 0;
     left: 0;
     position: fixed;
@@ -164,5 +172,7 @@ body::selection {
     display: flex;
     justify-content: space-around;
     backdrop-filter: blur(1rem);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
   }
 }
