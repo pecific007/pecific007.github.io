@@ -169,6 +169,10 @@
     font-size: 1rem;
   }
 
+  .livrm {
+    scale: 90%;
+  }
+
   .post2 {
     text-align: center;
     line-height: 50px;
@@ -179,3 +183,4 @@
     width: 260px;
   }
 }
+
