@@ -149,7 +149,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    /* grid-template-columns: 250px; */
+    grid-template-columns: 100vw;
   }
 
   .field {
@@ -196,4 +196,3 @@
     width: 260px;
   }
 }
-
