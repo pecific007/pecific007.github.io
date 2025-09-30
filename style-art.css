@@ -148,7 +148,10 @@
     align-items: center;
     /* grid-template-columns: 250px; */
   }
-
+  .field_name {
+    background: transparent;
+    display: inline;
+  }
   .container,
   .container1,
   .container2 {
@@ -184,6 +187,7 @@
     width: 260px;
   }
 }
+
 
 
 
