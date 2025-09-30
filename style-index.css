@@ -36,7 +36,7 @@
 
 .lang:hover {
   /* box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.9); */
-  box-shadow: 0px 0px 20px rgba(255, 228, 255, 0.9);
+  filter: drop-shadow(0px 0px 5px rgba(255, 228, 255, 0.9));
   scale: 104%;
   border-color: var(--purpwhite);
   background: transparent;
@@ -88,9 +88,15 @@ button:hover {
     text-align: center;
   }
 
+  .span-two {
+    grid-column: span 2;
+  }
+
   .lang {
     font-size: 1rem;
     width: 5rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
   }
 
   .edu {
