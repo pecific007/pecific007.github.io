@@ -107,6 +107,10 @@ body::selection {
 
 
 @media screen and (max-width: 900px) {
+  :root {
+    --prim-col: rgb(0, 0, 0);
+  }
+
   body {
     font-size: 1.1em;
   }
@@ -131,18 +135,34 @@ body::selection {
     opacity: 0;
   }
 
-.btmbar {
-  opacity: 1;
-  z-index: 999;
-  background-color: rgba(28, 27, 34, 0.5);
-  height: 3em;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  box-shadow: -1px -2px 5px rgba(102, 80, 237, 0.5);
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  backdrop-filter: blur(1rem);
-}
+  .li {
+    background-color: var(--purpwhite);
+  }
+
+  .li:hover {
+    opacity: 0.6;
+  }
+
+  .high {
+    background-color: var(--blueViolet);
+  }
+
+  .btbr_img {
+    height: 20px;
+  }
+
+  .btmbar {
+    opacity: 1;
+    z-index: 999;
+    background-color: rgba(28, 27, 34, 0.5);
+    height: 3em;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    box-shadow: -1px -2px 5px rgba(102, 80, 237, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(1rem);
+  }
 }
