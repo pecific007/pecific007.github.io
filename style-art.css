@@ -159,12 +159,13 @@
     padding: 50px;
   }
   .rvvp1 {
-    padding: 30px;
+    padding: 20px;
   }
 
   .kit {
-    grid-template-columns: 350px;
+    grid-template-columns: 250px;
     padding: 20px;
+    font-size: 1rem;
   }
 
   .post2 {
