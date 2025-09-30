@@ -7,11 +7,6 @@
   --defHeight: 400px;
 }
 
-.hline {
-  margin-top: 1em;
-  margin-bottom: 3em;
-}
-
 .solar {
   width: 95%;
 }
@@ -201,3 +196,4 @@
     width: 260px;
   }
 }
+
