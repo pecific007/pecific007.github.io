@@ -102,16 +102,11 @@ body::selection {
 }
 
 .btmbar {
-  background-color: var(--blueViolet);
-  position: fixed;
-  opacity: 0;
-  z-index: -99;
-  cursor: pointer;
-  width: 0px;
+  display: none;
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   :root {
     --prim-col: rgb(0, 0, 0);
   }
@@ -121,23 +116,18 @@ body::selection {
   }
 
   .navbar {
-    width: 100vw;
+    padding-left: 0;
+    width: 100%;
     text-align: center;
-    left: 0;
-    right: 0;
   }
 
   .webname {
-    margin-left: 30%;
+    padding: 0;
+    margin-left: 0;
   }
 
   .nav {
-    z-index: -99;
-    margin-left: 1000px;
-  }
-
-  .ul {
-    opacity: 0;
+    display: none;
   }
 
   .li {
@@ -159,8 +149,6 @@ body::selection {
   }
 
   .btmbar {
-    opacity: 1;
-    z-index: 999;
     background-color: rgba(28, 27, 34, 0.5);
     height: 3em;
     padding-top: 10px;
