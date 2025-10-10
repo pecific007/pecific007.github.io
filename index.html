@@ -27,36 +27,77 @@
 
     <main class="content">
       <div class="know">
-        <div class="lang">
+        <div class="lang" id="lang">
           <div class="name">
             <!-- <h1 class="lang">C</h1> -->
             <h1>C Lang.</h1>
           </div>
         </div>
-        <div class="lang">
+        <div class="lang" id="lang-html" onclick="changeStyle('html')">
           <div class="name">
             <!-- <h1 class="lang">C</h1> -->
             <h1>HTML</h1>
           </div>
         </div>
-        <div class="lang span-two">
+        <div class="lang span-two" id="lang">
           <div class="name">
             <!-- <h1 class="lang">C</h1> -->
             <h1>Lua</h1>
           </div>
         </div>
-        <div class="lang">
+        <div class="lang" id="lang-css" onclick="changeStyle('css')">
           <div class="name">
             <!-- <h1 class="lang">C</h1> -->
             <h1>CSS</h1>
           </div>
         </div>
-        <div class="lang">
+        <div class="lang" id="lang">
           <div class="name">
             <!-- <h1 class="lang">C</h1> -->
             <h1>Bash</h1>
           </div>
         </div>
+      </div>
+
+      <div class="cd-html" id="code-html">
+        <iframe
+          class="iframe"
+          src="markdown-website/index-code.html"
+          frameborder="0"
+        ></iframe>
+        <iframe
+          class="iframe"
+          src="markdown-website/art-code.html"
+          frameborder="0"
+        ></iframe>
+        <iframe
+          class="iframe"
+          src="markdown-website/socials-code.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <div class="cd-css" id="code-css">
+        <iframe
+          class="iframe"
+          src="markdown-website/style-general-code.html"
+          frameborder="0"
+        ></iframe>
+        <iframe
+          class="iframe"
+          src="markdown-website/style-index-code.html"
+          frameborder="0"
+        ></iframe>
+        <iframe
+          class="iframe"
+          src="markdown-website/style-art-code.html"
+          frameborder="0"
+        ></iframe>
+        <iframe
+          class="iframe"
+          src="markdown-website/style-socials-code.html"
+          frameborder="0"
+        ></iframe>
       </div>
 
       <h1 class="current-learn" style="font-size: 50px">Currently Learning:</h1>
@@ -132,5 +173,26 @@
         </span>
       </a>
     </aside>
+
+    <script>
+      // ht.addEventListener("click", changeStyle);
+      function changeStyle(name) {
+      let lang_class = "lang"+"-"+name;
+      let cd_class = "code"+"-"+name;
+      const ht = document.getElementById(lang_class);
+      const cd = document.getElementById(cd_class);
+        cd.style.display = cd.style.display == "none" ? "flex" : "none";
+        // ht.style.background = "transparent";
+        ht.style.background = (ht.style.background == "linear-gradient(to bottom, var(--ltblack) 80%, rgba(43, 39, 255, 0.2))")
+          ? "transparent"
+          : "linear-gradient(to bottom, var(--ltblack) 80%, rgba(43, 39, 255, 0.2))";
+        ht.style.filter = (ht.style.filter == "none")
+          ? "drop-shadow(0px 0px 5px rgba(255, 228, 255, 0.9))"
+          : "none";
+        ht.style.border = (ht.style.border == "3px solid var(--blueViolet)") 
+          ? "3px solid var(--purpwhite)"
+          : "3px solid var(--blueViolet)";
+      }
+    </script>
   </body>
 </html>
