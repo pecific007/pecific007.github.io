@@ -43,17 +43,29 @@
   background: transparent;
 }
 
-.cd-html {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  /* display: flex; */
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 1rem;
+@keyframes appear{
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
 }
-.cd-css{
+@keyframes dissappear{
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+  }
+}
+
+.cd-html,
+.cd-css {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -62,6 +74,8 @@
   cursor: pointer;
   flex-direction: column;
   gap: 1rem;
+  animation-duration: 1s;
+  animation-play-state: paused;
 }
 
 .iframe {
@@ -93,7 +107,7 @@
   margin-bottom: 10px;
 }
 
-button {
+.play_now_button {
   background-color: var(--blueViolet);
   border: none;
   border-radius: 0.5rem;
@@ -102,7 +116,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.play_now_button:hover {
   box-shadow: 0px 0px 20px hsla(248, 81%, 62%, 0.9);
   scale: 110%;
 }

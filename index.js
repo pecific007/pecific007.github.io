@@ -3,7 +3,16 @@ function changeStyle(name) {
   let cd_class = "code" + "-" + name;
   const ht = document.getElementById(lang_class);
   const cd = document.getElementById(cd_class);
-  cd.style.display = cd.style.display == "none" ? "flex" : "none";
+  cd.style.animationPlayState = "running";
+  // cd.style.display = cd.style.display == "none" ? "flex" : "none";
+  if (cd.style.display === "none") {
+    cd.style.animationName = "appear";
+    cd.style.display = "flex";
+  }
+  else {
+    cd.style.animationName = "dissappear";
+    cd.style.display = "none";
+  }
   // ht.style.background = "transparent";
   ht.style.background =
     ht.style.background ==
