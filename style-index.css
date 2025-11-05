@@ -121,8 +121,22 @@
   scale: 110%;
 }
 
+.forComp {
+  display: block;
+}
+.forMobile {
+  display: none;
+}
+
 
 @media screen and (max-width: 700px) {
+  .forMobile {
+    display: block
+  }
+  .forComp {
+    display: none;
+  }
+
   .know {
     display: grid;
     gap: 1rem;

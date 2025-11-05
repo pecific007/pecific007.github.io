@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Source Code</title>
     <link rel="stylesheet" href="style-general.css" />
-</head>
+    <!-- <link rel="stylesheet" href="style-index.css" /> -->
+    <link rel="stylesheet" href="source.css" />
+    <script src="source.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar">
       <div class="webname">Pecific</div>
       <div class="nav">
         <ul class="ul" type="none">
-          <li class="high li">Programming</li>
+          <a href="index.html">
+            <li class="high li">Programming</li>
+          </a>
           <a href="art.html">
             <li class="li">Art</li>
           </a>
@@ -22,8 +26,99 @@
           </a>
         </ul>
       </div>
+      <div class="toggle">
+        <button data-type="type1" class="type" id="type_html">HTML</button>
+        <button data-type="type2" class="type" id="type_css">CSS</button>
+      </div>
     </nav>
-    
+
+    <main id="source" class="content">
+      <div class="ALL" id="type1">
+        <div class="optoins_switch_bar">
+          <div class="syst_btns">
+            <div class="close"></div>
+            <div class="maxi"></div>
+            <div class="min"></div>
+          </div>
+          <div class="btns">
+            <button class="switch_button autoSelect" id="autoSelect" data-frame="code1">
+              index.html
+            </button>
+            <button class="switch_button" data-frame="code2">art.html</button>
+            <button class="switch_button" data-frame="code3">
+              socials.html
+            </button>
+          </div>
+        </div>
+        <div class="frame_container">
+          <div class="frames" id="code1">
+            <iframe
+              class="iframe"
+              src="markdown-website/index-code.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="frames" id="code2">
+            <iframe
+              class="iframe"
+              src="markdown-website/art-code.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="frames" id="code3">
+            <iframe
+              class="iframe"
+              src="markdown-website/socials-code.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="ALL" id="type2">
+        <div class="optoins_switch_bar">
+          <div class="syst_btns">
+            <div class="close"></div>
+            <div class="maxi"></div>
+            <div class="min"></div>
+          </div>
+          <div class="btns">
+            <button class="switch_button autoSelect" id="autoSelect" data-frame="code4">
+              index.css
+            </button>
+            <button class="switch_button" data-frame="code5">art.css</button>
+            <button class="switch_button" data-frame="code6">
+              socials.css
+            </button>
+          </div>
+        </div>
+        <div class="frame_container">
+          <div class="frames" id="code4">
+            <iframe
+              class="iframe"
+              src="markdown-website/style-index-code.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="frames" id="code5">
+            <iframe
+              class="iframe"
+              src="markdown-website/style-art-code.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="frames" id="code6">
+            <iframe
+              class="iframe"
+              src="markdown-website/style-socials-code.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
     <aside class="btmbar">
       <span class="raiseup high li" title="Programming">
         <img
@@ -51,6 +146,5 @@
         </span>
       </a>
     </aside>
-
-</body>
+  </body>
 </html>
