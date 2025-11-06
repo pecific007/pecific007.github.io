@@ -39,14 +39,12 @@ iframe {
 
 @keyframes grow {
   0% {
-    background-color: #555;
+    background-color: #999;
     color: #fff;
-    font-size: 15px;
   }
   100% {
     background-color: #fff;
     color: #000;
-    font-size: 20px;
   }
 }
 
@@ -104,7 +102,7 @@ iframe {
 .switch_button {
   justify-self: flex-start;
   color: #fff;
-  background-color: #555;
+  background-color: #999;
   border: none;
   padding: 10px 15px;
   border-radius: 10px 10px 0px 0px;
@@ -177,4 +175,46 @@ iframe {
   .webname {
     flex-grow: 1;
   }
+}
+
+
+.loading_page {
+  width: 80vw;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes loading_circle_spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(350deg);
+    opacity: 0;
+  }
+}
+
+.front_loading {
+  background-color: #fff;
+  height: 12%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: transparent;
+  position: absolute;
+}
+.loading_color {
+  background-image: linear-gradient(to bottom right, #6650ed , #ffe5ff 50%);
+  height: 15%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  animation: loading_circle_spin 0.3s forwards;
+  animation-play-state: paused;
 }
