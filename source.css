@@ -6,6 +6,10 @@
   --ltblack: #1c1b22;
 }
 
+body {
+  padding-bottom: 10px;
+}
+
 .content {
   height: max-content;
   width: max-content;
@@ -178,7 +182,8 @@ iframe {
 }
 
 
-.loading_page {
+.loading_page,
+.loading_page1 {
   width: 80vw;
   height: 80vh;
   background-color: #fff;
@@ -201,7 +206,8 @@ iframe {
   }
 }
 
-.front_loading {
+.front_loading,
+.front_loading1 {
   background-color: #fff;
   height: 12%;
   aspect-ratio: 1;
@@ -209,7 +215,8 @@ iframe {
   border: transparent;
   position: absolute;
 }
-.loading_color {
+.loading_color,
+.loading_color1 {
   background-image: linear-gradient(to bottom right, #6650ed , #ffe5ff 50%);
   height: 15%;
   aspect-ratio: 1;

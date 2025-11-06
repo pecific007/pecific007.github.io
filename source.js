@@ -4,12 +4,20 @@ function showCode(code) {
   });
   document.querySelector(".loading_page").style.display = "flex";
   document.querySelector(".loading_color").style.animationPlayState = "running";
+  document.querySelector(".loading_page1").style.display = "flex";
+  document.querySelector(".loading_color1").style.animationPlayState = "running";
   document
     .querySelector(".loading_color")
     .addEventListener("animationend", function () {
       document.querySelector(".loading_page").style.display = "none";
     });
-    document.querySelector(`#${code}`).style.display = "block";
+
+  document
+    .querySelector(".loading_color1")
+    .addEventListener("animationend", function () {
+      document.querySelector(".loading_page1").style.display = "none";
+    });
+  document.querySelector(`#${code}`).style.display = "block";
 }
 
 function shwoType(type) {
@@ -55,11 +63,12 @@ document.addEventListener("DOMContentLoaded", function () {
   function changeStyleToggle() {
     if (htmlCssToggle.checked) {
       shwoType("type2");
+      let indexCss = document.querySelector("#autoSelectCss");
       code4.style.display = "block";
-      code4.style.backgroundColor = "#fff";
-      code4.style.color = "#000";
-      code4.style.animationPlayState = "running";
-      code4.style.animationFillMode = "backwards";
+      indexCss.style.backgroundColor = "#fff";
+      indexCss.style.color = "#000";
+      indexCss.style.animationPlayState = "running";
+      indexCss.style.animationFillMode = "backwards";
       document.querySelector("#code1").style.display = "block";
       document.querySelector(".toggle").style.animationName = "switch_css";
       document.querySelector(".toggle").style.animationPlayState = "running";
