@@ -4,20 +4,26 @@ function showCode(code) {
   });
   document.querySelector(".loading_page").style.display = "flex";
   document.querySelector(".loading_color").style.animationPlayState = "running";
-  document.querySelector(".loading_page1").style.display = "flex";
-  document.querySelector(".loading_color1").style.animationPlayState = "running";
   document
     .querySelector(".loading_color")
     .addEventListener("animationend", function () {
       document.querySelector(".loading_page").style.display = "none";
     });
 
+  loadLoadingPage();
+
+  document.querySelector(`#${code}`).style.display = "block";
+}
+
+function loadLoadingPage() {
+  document.querySelector(".loading_page1").style.display = "flex";
+  document.querySelector(".loading_color1").style.animationPlayState =
+    "running";
   document
     .querySelector(".loading_color1")
     .addEventListener("animationend", function () {
       document.querySelector(".loading_page1").style.display = "none";
     });
-  document.querySelector(`#${code}`).style.display = "block";
 }
 
 function shwoType(type) {
@@ -63,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function changeStyleToggle() {
     if (htmlCssToggle.checked) {
       shwoType("type2");
+      loadLoadingPage();
       let indexCss = document.querySelector("#autoSelectCss");
       code4.style.display = "block";
       indexCss.style.backgroundColor = "#fff";
