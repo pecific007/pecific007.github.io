@@ -183,11 +183,11 @@ iframe {
   height: 80vh;
   background-color: #fff;
   border-radius: 10px;
-  margin-bottom: 10px;
   color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 @keyframes loading_circle_spin {
