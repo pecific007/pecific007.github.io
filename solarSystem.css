@@ -6,6 +6,12 @@ body {
     width: fit-content;
 }
 
+@keyframes wobble {
+  50% {
+    transform: translate(3px, 3px);
+  }
+}
+
 .solSyst {
   position: absolute;
   height: fit-content;
@@ -50,12 +56,16 @@ body {
   padding: 10px 20px;
   border-radius: 100%;
   transition: all ease-in-out 0.2s;
-  filter: drop-shadow(0 0 10vw rgb(255, 166, 0))
+  filter: drop-shadow(0 0 10vw rgb(255, 166, 0));
+  animation-duration: 4s;
 }
 
 .obj {
   scale: 100%;
   transition: all ease-in-out 0.2s;
+  animation-name: wobble;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 .obj:hover {
   scale: 110%;
@@ -66,6 +76,7 @@ body {
 
 .merc {
   height: 50px;
+  animation-duration: 1s;
 }
 .merc:hover {
   scale: 200%;
@@ -73,31 +84,38 @@ body {
 
 .ven {
   height: 75px;
+  animation-duration: 1.1s;
 }
 
 .ear {
   height: 100px;
+  animation-duration: 1.7s;
 }
 
 .mar {
   height: 85px;
+  animation-duration: 1.6s;
 }
 
 .jup {
   height: 200px;
   margin-left: 50px;
+  animation-duration: 3s;
 }
 
 .sat {
   height: 300px;
+  animation-duration: 2.5s;
 }
 
 .ura {
   height: 150px;
+  animation-duration: 1.9s;
 }
 
 .nep {
   height: 150px;
+  animation-duration: 2s;
 }
 
 

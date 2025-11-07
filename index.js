@@ -1,7 +1,7 @@
 let is_mobile;
 console.log(window.innerWidth)
 document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth <= 700) {
+  if (window.innerWidth <= 500) {
     is_mobile = true;
   } else {
     is_mobile = false;

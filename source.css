@@ -176,8 +176,12 @@ iframe {
   cursor: pointer;
 }
 @media screen and (max-width: 700px) {
-  .webname {
+  .toggle, .type, .webname {
     flex-grow: 1;
+  }
+  body {
+    padding-top: 4.5rem;
+    padding-bottom: 9rem;
   }
 }
 
