@@ -50,11 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".toggle").style.animationName = "switch_html";
   document.querySelector(".toggle").style.animationPlayState = "running";
   document.querySelector(".toggle").style.animationFillMode = "forwards";
-  typehtml.style.backgroundColor = "#6650ed";
   typehtml.style.color = "#fff";
-  typehtml.style.filter = "drop-shadow(0px 1px 2px rgba(0,0,0,0.5))";
   let htmlCssToggle = document.querySelector("#htmlCssToggle");
-  //   filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.5));
   let typecss = document.querySelector("#type_css");
   htmlCssToggle.checked = false;
   document.querySelector(".toggle").onclick = function () {
@@ -81,10 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".toggle").style.animationPlayState = "running";
       document.querySelector(".toggle").style.animationFillMode = "forwards";
       typehtml.style.filter = "none";
-      typecss.style.filter = "drop-shadow(0px 1px 2px rgba(0,0,0,0.5))";
-      typehtml.style.backgroundColor = "transparent";
       typehtml.style.color = "#000";
-      typecss.style.backgroundColor = "#6650ed";
       typecss.style.color = "#fff";
     } else {
       shwoType("type1");
@@ -93,10 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".toggle").style.animationName = "switch_html";
       document.querySelector(".toggle").style.animationPlayState = "running";
       document.querySelector(".toggle").style.animationFillMode = "forwards";
-      typehtml.style.filter = "drop-shadow(0px 1px 2px rgba(0,0,0,0.5))";
-      typehtml.style.backgroundColor = "#6650ed";
       typehtml.style.color = "#fff";
-      typecss.style.backgroundColor = "transparent";
       typecss.style.color = "#000";
     }
   }
