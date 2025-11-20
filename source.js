@@ -38,18 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".loading_page").style.display = "none";
   document.querySelector(`#type1`).style.display = "block";
   document.querySelector("#code1").style.display = "block";
-  let autoSelect = document.querySelector(".autoSelect");
+  let autoSelect = document
+    .querySelectorAll(".autoSelect")
+    .forEach((autoSelect) => {
+      autoSelect.style.backgroundColor = "#fff";
+      autoSelect.style.color = "#000";
+      autoSelect.style.animationPlayState = "running";
+      autoSelect.style.animationFillMode = "forwards";
+    });
   let code4 = document.querySelector("#code4");
-  autoSelect.style.backgroundColor = "#fff";
-  autoSelect.style.color = "#000";
-  autoSelect.style.animationPlayState = "running";
-  autoSelect.style.animationFillMode = "backwards";
   code4.style.display = "block";
 
   let typehtml = document.querySelector("#type_html");
-  document.querySelector(".toggle").style.animationName = "switch_html";
   document.querySelector(".toggle").style.animationPlayState = "running";
-  document.querySelector(".toggle").style.animationFillMode = "forwards";
+  document.querySelector(".toggle").style.animationDirection = "normal";
   typehtml.style.color = "#fff";
   let htmlCssToggle = document.querySelector("#htmlCssToggle");
   let typecss = document.querySelector("#type_css");
@@ -72,21 +74,18 @@ document.addEventListener("DOMContentLoaded", function () {
       indexCss.style.backgroundColor = "#fff";
       indexCss.style.color = "#000";
       indexCss.style.animationPlayState = "running";
-      indexCss.style.animationFillMode = "backwards";
       document.querySelector("#code1").style.display = "block";
-      document.querySelector(".toggle").style.animationName = "switch_css";
       document.querySelector(".toggle").style.animationPlayState = "running";
       document.querySelector(".toggle").style.animationFillMode = "forwards";
-      typehtml.style.filter = "none";
+      document.querySelector(".toggle").style.animationDirection = "reverse";
       typehtml.style.color = "#000";
       typecss.style.color = "#fff";
     } else {
       shwoType("type1");
       showCode("code1");
       typecss.style.filter = "none";
-      document.querySelector(".toggle").style.animationName = "switch_html";
       document.querySelector(".toggle").style.animationPlayState = "running";
-      document.querySelector(".toggle").style.animationFillMode = "forwards";
+      document.querySelector(".toggle").style.animationDirection = "normal";
       typehtml.style.color = "#fff";
       typecss.style.color = "#000";
     }

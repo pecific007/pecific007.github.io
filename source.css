@@ -128,36 +128,13 @@ iframe {
   gap: 0.1em;
   align-items: center;
   justify-content: center;
+  animation-name: switch_html;
+  animation-fill-mode: forwards;
   animation-duration: 0.15s;
   animation-play-state: paused;
   transition: all ease-in-out 0.3s;
 }
 
-@keyframes switch_css {
-  0% {
-    background-image: linear-gradient(
-      to right,
-      var(--blueViolet),
-      var(--purpwhite)
-    );
-  }
-  50% {
-    background-image: linear-gradient(
-      to left,
-      var(--purpwhite),
-      var(--blueViolet),
-      var(--purpwhite)
-    );
-
-  }
-  100% {
-    background-image: linear-gradient(
-      to left,
-      var(--blueViolet),
-      var(--purpwhite)
-    );
-  }
-}
 @keyframes switch_html {
   0% {
     background-image: linear-gradient(
@@ -173,7 +150,6 @@ iframe {
       var(--blueViolet),
       var(--purpwhite)
     );
-
   }
   100% {
     background-image: linear-gradient(
@@ -191,7 +167,7 @@ iframe {
   border-radius: 100vh;
   padding: 10px 15px;
   font-size: 15px;
-  background-color: rgb(0 0 0 / 0);
+  background: transparent;
   cursor: pointer;
 }
 @media screen and (max-width: 700px) {
