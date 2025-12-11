@@ -130,9 +130,9 @@ iframe {
   justify-content: center;
   animation-name: switch_html;
   animation-fill-mode: forwards;
-  animation-duration: 0.15s;
+  animation-duration: 1s;
   animation-play-state: paused;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 300ms;
 }
 
 @keyframes switch_html {

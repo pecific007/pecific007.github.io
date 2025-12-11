@@ -50,13 +50,14 @@ document.addEventListener("DOMContentLoaded", function () {
   code4.style.display = "block";
 
   let typehtml = document.querySelector("#type_html");
-  document.querySelector(".toggle").style.animationPlayState = "running";
-  document.querySelector(".toggle").style.animationDirection = "normal";
+  let toggle = document.querySelector('.toggle');
+  toggle.style.animationPlayState = "running";
+  toggle.style.animationDirection = "normal";
   typehtml.style.color = "#fff";
   let htmlCssToggle = document.querySelector("#htmlCssToggle");
   let typecss = document.querySelector("#type_css");
   htmlCssToggle.checked = false;
-  document.querySelector(".toggle").onclick = function () {
+  toggle.onclick = function () {
     if (htmlCssToggle.checked) {
       htmlCssToggle.checked = false;
     } else {
@@ -75,17 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
       indexCss.style.color = "#000";
       indexCss.style.animationPlayState = "running";
       document.querySelector("#code1").style.display = "block";
-      document.querySelector(".toggle").style.animationPlayState = "running";
-      document.querySelector(".toggle").style.animationFillMode = "forwards";
-      document.querySelector(".toggle").style.animationDirection = "reverse";
+      toggle.style.animationPlayState = "running";
+      toggle.style.animationDirection = "reverse";
       typehtml.style.color = "#000";
       typecss.style.color = "#fff";
     } else {
       shwoType("type1");
       showCode("code1");
       typecss.style.filter = "none";
-      document.querySelector(".toggle").style.animationPlayState = "running";
-      document.querySelector(".toggle").style.animationDirection = "normal";
+      toggle.style.animationPlayState = "running";
+      toggle.style.animationDirection = "normal";
       typehtml.style.color = "#fff";
       typecss.style.color = "#000";
     }
