@@ -4,10 +4,12 @@
   /* --violet: #8a2ce2; */
   --blueViolet: #6650ed;
   --ltblack: #1c1b22;
+  --max-width: 20000px;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #000000;
 }
 
 * {
@@ -20,12 +22,6 @@ html {
   color-scheme: dark;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: none;
-}
-
 body {
   padding-top: 7em;
   padding-bottom: 5em;
@@ -35,11 +31,19 @@ body {
     rgba(102, 80, 237, 0.3) 1%,
     var(--ltblack) 80%
   );
+  max-width: var(--max-width);
 }
 
 body::selection {
   background: var(--purpwhite);
   color: var(--ltblack);
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: none;
 }
 
 .navbar {
@@ -53,6 +57,7 @@ body::selection {
   position: fixed;
   z-index: 999;
   backdrop-filter: blur(1rem);
+  max-width: var(--max-width);
 }
 
 .webname {
@@ -104,7 +109,6 @@ body::selection {
 .btmbar {
   display: none;
 }
-
 
 @media screen and (max-width: 700px) {
   :root {
