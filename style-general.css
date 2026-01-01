@@ -199,7 +199,6 @@ a {
 
 .card_container {
   border: 3px solid var(--purpwhite);
-  border-radius: 5rem;
   box-shadow: 0 0 50px rgba(255, 228, 255, 0.5);
   background-image: radial-gradient(var(--ltblack) 50%, rgba(43, 39, 255, 0.2));
   box-sizing: border-box;

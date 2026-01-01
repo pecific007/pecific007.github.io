@@ -43,7 +43,7 @@ h1 {
   .card_container {
     grid-template-columns: 1fr;
     border-radius: 2rem;
-    padding: 1rem 1rem;
+    padding: 3rem 2rem;
   }
 
   .conteet {
