@@ -19,28 +19,8 @@ header {
 
 .All_content {
   display: flex;
+  margin-top: -2em;
 }
-
-/* .solar_cointainer {
-  background-color: var(--ltblack);
-  width: fit-content;
-  display: grid;
-  border: 2px solid var(--purpwhite);
-  border-radius: 1rem;
-  padding: 1rem 0px;
-}
-
-.frame {
-  width: 85%;
-  height: 800px;
-  overflow: hidden;
-}
-
-.solar_title {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 1rem;
-} */
 
 .main {
   display: inline-block;
@@ -48,26 +28,13 @@ header {
 
 .field_name {
   font-size: 2em;
-  margin-top: -1rem;
   text-align: center;
-  background-color: var(--ltblack);
   width: fit-content;
   padding: 0.5rem;
   border: 2px solid var(--purpwhite);
   border-radius: 1rem;
 }
-.field {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0 0 0 /0) 48%,
-    var(--purpwhite),
-    rgb(0 0 0 /0) 52%
-  );
-}
-
 .content {
-  height: max-content;
-  width: min-content;
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   display: grid;
@@ -78,7 +45,7 @@ header {
   scroll-snap-type: x mandatory;
 }
 
-.card_container {
+.card_all {
   height: fit-content;
   margin-inline: 5em;
   box-sizing: border-box;
@@ -106,61 +73,27 @@ header {
 /* Media Queries */
 
 @media screen and (max-width: 900px) {
-  /* body {
-    font-size: 5em;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 100vw;
-  } */
-  /* 
-  .content {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 100vw;
-  } */
   :root {
     --image-height: 15rem;
   }
-  /* .solar_cointainer {
-  background-color: var(--ltblack);
-  width: fit-content;
-  display: grid;
-  border: 2px solid var(--purpwhite);
-  border-radius: 1rem;
-  padding: 1rem 0px;
-}
 
-.frame {
-  width: 85%;
-  height: 800px;
-  overflow: hidden;
-}
-
-.solar_title {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 1rem;
-} */
-
-body {
-  overflow-y: auto;
-}
+  body {
+    overflow-y: auto;
+  }
 
   .main {
     width: 100vw;
     height: 100vh;
   }
-
   .field_name {
     font-size: 1em;
-    margin-top: -2rem;
-    margin-bottom: 1rem;
+    flex-grow: 1;
   }
 
   .content {
-    margin-top: 1em;
+    margin-top: -5em;
     margin-bottom: 1em;
+    padding-top: 5em;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -172,16 +105,15 @@ body {
     scroll-padding-top: 5em;
   }
 
-  .card_container {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+  .card_all {
+    margin: 1em 0;
     height: fit-content;
+    padding: 2em;
     scroll-snap-align: center;
   }
 
   .card {
+    padding: 1em;
     display: grid;
     grid-template-rows: var(--image-height), 1fr;
     gap: 1rem;

@@ -85,13 +85,28 @@
   flex-grow: 1;
 }
 
-.edu {
-  border-top: 1px solid var(--purpwhite);
-  display: flex;
-  gap: 10rem;
-  line-height: 30px;
-  padding: 50px;
+@keyframes greet {
+  to {opacity : 1}
 }
+
+.greet {
+  font-size: 5rem;
+  opacity: 0;
+  border-bottom: 1px solid var(--purpwhite);
+  /* Animation */
+  animation-name: greet;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.solar {
+  width: 100%;
+}
+.system {
+  width: 1650px;
+  height: 435px;
+}
+
 
 .hub {
   display: grid;
@@ -106,20 +121,6 @@
   display: block;
   margin-top: 20px;
   margin-bottom: 10px;
-}
-
-.play_now_button {
-  background-color: var(--blueViolet);
-  border: none;
-  border-radius: 0.5rem;
-  color: #fff;
-  padding: 10px 40px;
-  cursor: pointer;
-}
-
-.play_now_button:hover {
-  box-shadow: 0px 0px 20px hsla(248, 81%, 62%, 0.9);
-  scale: 110%;
 }
 
 .forComp {
@@ -156,16 +157,17 @@
     border-bottom-right-radius: 50%;
   }
 
-  .edu {
+  .solar {
+    height: 100%;
     display: grid;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .system {
+    height: 800px;
+    width: 85%;
   }
 
-  .current-learn {
-    width: 50vw;
-    word-break:normal;
-    text-align: center;
-  }
   
   .hub {
     width: 60vw;
