@@ -4,195 +4,123 @@
   /* --blueViolet: #8a2ce2; */
   --blueViolet: #6650ed;
   --ltblack: #1c1b22;
-  --defHeight: 400px;
+  --image-height: 30rem;
 }
 
-.solar {
-  width: 95%;
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
-.content {
-  height: max-content;
-  width: min-content;
-  /* grid-template-columns: 30rem; */
+header {
+  display: inline-block;
+}
+
+.All_content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  margin-top: -2em;
 }
 
-.post {
-  text-align: center;
-  line-height: 50px;
-}
-
- .post2 {
-   text-align: center;
-   line-height: 50px;
-   border-bottom: 1px solid #fff;
-   margin-bottom: 1rem;
- }
-
-.container {
-  border: 10px solid var(--blueViolet);
-  height: var(--defHeight);
-  width: min-content;
-  overflow: hidden;
-  border-radius: 1rem;
-}
-.container:hover,
-.container1:hover,
-.container2:hover {
-  transition: all ease-in-out 0.2s;
-  /* box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.9); */
-  box-shadow: 0px 0px 20px rgba(255, 228, 255, 0.9);
-  scale: 104%;
-}
-
-.container1 {
-  border: 10px solid var(--blueViolet);
-  height: var(--defHeight);
-  width: var(--defHeight);
-  overflow: hidden;
-  background-image: url(Images/Anime_Tree.png);
-  background-size: cover;
-  background-position: center center;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.container2 {
-  border: 10px solid var(--blueViolet);
-  width: var(--defHeight);
-  height: min-content;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.image {
-  height: var(--defHeight);
-  border-radius: 0.5rem;
-}
-
-.image2 {
-  width: var(--defHeight);
-  border-radius: 0.5rem;
-}
-
-.rvvp {
-  display: flex;
-  gap: 1rem;
-  text-align: center;
-  border: 2px solid var(--purpwhite);
-  border-radius: 1rem;
-  padding: 50px 30px;
-}
-
-.rvvp1 {
-  display: grid;
-  gap: 2rem;
-  text-align: center;
-  border: 2px solid var(--purpwhite);
-  border-radius: 1rem;
-  padding: 50px;
-  padding-top: 30px;
-}
-
-.kit {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 450px 450px;
-  text-align: center;
-  border: 2px solid var(--purpwhite);
-  border-radius: 1rem;
-  padding: 50px;
-  line-height: 50px;
-}
-
-.frame {
-  width: inherit;
-  height: 430px;
-}
-
-.field {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 2rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 45%,
-    #fff 50%,
-    rgba(0, 0, 0, 0) 50.1%
-  );
+.main {
+  display: inline-block;
 }
 
 .field_name {
-  color: var(--purpwhite);
-  background: var(--ltblack);
-  display: inline;
+  font-size: 2em;
+  text-align: center;
+  width: fit-content;
+  padding: 0.5rem;
+  border: 2px solid var(--purpwhite);
+  border-radius: 1rem;
+}
+.content {
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  display: grid;
+  gap: 3em;
+  height: fit-content;
+  width: 100vw;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card_all {
+  height: fit-content;
+  margin-inline: 5em;
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: var(--ltblack);
+  border: 3px solid var(--blueViolet);
+  border-radius: 1rem;
+  scroll-snap-align: center;
+  margin-top: 3em;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 100px, 1fr;
+  gap: 1rem;
+}
+
+.image {
+  height: var(--image-height);
+  /* height: 100px; */
+  border: 1px solid var(--purpwhite);
+  border-radius: 1rem;
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 900px) {
-  body {
-    font-size: 5em;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 100vw;
+  :root {
+    --image-height: 15rem;
   }
 
-  :root {
-    --defHeight: 200px;
+  body {
+    overflow-y: auto;
+  }
+
+  .main {
+    width: 100vw;
+    height: 100vh;
+  }
+  .field_name {
+    font-size: 1em;
+    flex-grow: 1;
   }
 
   .content {
+    margin-top: -5em;
+    margin-bottom: 1em;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding-bottom: 5em;
+    scroll-padding-top: 5em;
+  }
+
+  .card_all {
+    margin: 1em 0;
+    height: fit-content;
+    padding: 2em;
+    scroll-snap-align: center;
+  }
+
+  .card {
+    padding: 1em;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 100vw;
+    grid-template-rows: var(--image-height), 1fr;
+    gap: 1rem;
   }
 
-  .field {
-    width: 80%;
-  }
-
-  .container,
-  .container1,
-  .container2 {
-    border: 5px solid var(--blueViolet);
-  }
-
-  .rvvp {
-    display: grid;
-    padding: 50px;
-  }
-  .rvvp1 {
-    padding: 20px;
-    scale: 80%;
-  }
-
-  .livrm {
-    scale: 90%;
-  }
-
-  .kit {
-    grid-template-columns: 250px;
-    padding: 20px;
-    font-size: 1rem;
-  }
-
-  .solar {
-    width: 100%;
-  }
-
-  .post2 {
-    text-align: center;
-    line-height: 50px;
-    width: 80%;
-  }
-
-  .frame {
-    height: 800px;
-    width: 260px;
+  .image {
+    width: var(--image-height);
+    height: auto;
   }
 }

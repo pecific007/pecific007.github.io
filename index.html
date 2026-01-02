@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programming</title>
-    <link rel="icon" href="Images/Logo.png" type="image/x-icon" />
+    <link rel="icon" href="Images/icons/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style-index.css" />
     <link rel="stylesheet" href="style-general.css" />
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -27,6 +33,13 @@
     </nav>
 
     <main class="content">
+
+      <h1 class="greet">Welcome!</h1>
+
+      <div class="solar">
+        <iframe class="system" src="soarsystem.html" frameborder="5"></iframe>
+      </div>
+      
       <div class="know">
         <div class="lang" id="lang">
           <div class="name">
@@ -34,7 +47,11 @@
             <h1>C Lang.</h1>
           </div>
         </div>
-        <div class="lang lang_class" id="lang-html" onclick="changeStyle('html')">
+        <div
+          class="lang lang_class"
+          id="lang-html"
+          onclick="changeStyle('html')"
+        >
           <div class="name">
             <!-- <h1 class="lang">C</h1> -->
             <h1>HTML</h1>
@@ -100,37 +117,11 @@
           frameborder="0"
         ></iframe>
       </div>
-
-      <h1 class="current-learn" style="font-size: 50px">Currently Learning:</h1>
-
-      <div class="edu">
-        <div class="clg">
-          <h2>In College</h2>
-          <ul>
-            <li>C language</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>BootStrap</li>
-          </ul>
-        </div>
-        <div class="ext">
-          <h2>External Course: CS50</h2>
-          <ul>
-            <li>C language</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Flask</li>
-          </ul>
-        </div>
-      </div>
-
+      
       <div class="hub forComp">
         <h1 class="game">Checkout the Source code for this website!</h1>
         <a href="source.html" target="_blank">
-          <button class="play_now_button">Click here!</button>
+          <button class="blue_button">Click here!</button>
         </a>
       </div>
       <!-- <div class="hub forMobile">
@@ -147,7 +138,7 @@
         >
         <h1 class="game">The Crab Game</h1>
         <a href="https://scratch.mit.edu/projects/1169620812/" target="_blank">
-          <button class="play_now_button">Play Now!</button>
+          <button class="blue_button">Play Now!</button>
         </a>
       </div>
     </main>
