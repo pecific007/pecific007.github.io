@@ -88,20 +88,8 @@ header {
     margin: 1rem;
   }
 
+
   .content {
-    margin-top: -5em;
-    padding: 5em 0;
-    gap: .01em;
-    width: 100vw;
-    place-content: center;
-  }
-  .scroll {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-
-
-  /* .content {
     margin-top: -5em;
     padding: 5em 0;
     display: grid;
@@ -112,8 +100,8 @@ header {
   }
   .scroll {
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
-  } */
+    scroll-snap-type: y mandatory;
+  }
 
   .card_all {
     margin: .1em 0;
@@ -133,5 +121,7 @@ header {
   .image {
     width: var(--image-height);
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 }
