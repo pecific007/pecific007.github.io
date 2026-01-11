@@ -37,41 +37,20 @@
 
         <h1>Follow me on:</h1>
 
-        <div class="card_container">
-          <div class="card">
-            <img src="Images/icons/github-mark.svg" alt="" class="logo">
-            <p class="user_name">Username:</p>
-            <a href="https://github.com/pecific007" target="_blank">
-              <button class="blue_button">@pecific007</button>
-            </a>
-          </div>
+        <div class="card_container"></div>
 
-          <div class="card">
-            <img src="Images/icons/new-youtube-logo-logo-svgrepo-com.svg" alt="" class="logo">
-            <p class="user_name">Username:</p>
-            <a href="https://youtube.com/@prash_rathod007" target="_blank">
-              <button class="blue_button">@prash_rathod007</button>
-            </a>
-          </div>
+    </main>
 
+    <template id="card_template">
           <div class="card">
-            <img src="Images/icons/instagram-2016-logo-svgrepo-com.svg" alt="" class="logo">
-            <p class="user_name">Username:</p>
-            <a href="https://www.instagram.com/endframe_art/" target="_blank">
-              <button class="blue_button">@endframe_art</button>
-            </a>
-          </div>
-
-          <div class="card">
-            <img src="Images/icons/sketchfab-logo.svg" alt="" class="logo">
+            <img src="" alt="" class="logo">
             <p class="user_name">Visit:</p>
-            <a href="https://sketchfab.com/Minute_watchers_64" target="_blank">
-              <button class="blue_button">sketchfab</button>
+            <a href="" target="_blank">
+              <button class="blue_button"></button>
             </a>
           </div>
         </div>
-
-    </main>
+    </template>
 
     <aside class="btmbar">
       <a href="index.html">
@@ -88,6 +67,40 @@
           <img class="btbr_img" src="Images/icons/social-youtube-svgrepo-com.svg" alt="">
         </span>
     </aside>
+
+    <script>
+      const container = document.querySelector('.card_container');
+      const template = document.querySelector("#card_template");
+      const icons = {
+        "Github": "https://github.com/pecific007",
+        "YouTube": "https://youtube.com/@prash_rathod007",
+        "Instagram": "https://www.instagram.com/endframe_art/",
+        "Sketchfab": "https://sketchfab.com/Minute_watchers_64"
+      }
+      let paths = Object.keys(icons);
+      let links = Object.values(icons);
+
+      for (let i = 0; i < paths.length; i++) {
+        container.innerHTML += template.innerHTML;
+      }
+
+      let j = 0;
+      container.querySelectorAll('img').forEach((img) => {
+        img.src = `Images/icons/${paths[j]}.svg`;
+        j++;
+      });
+      j = 0;
+      container.querySelectorAll('a').forEach((link) => {
+        link.href = links[j];
+        j++;
+      });
+      j = 0;
+      container.querySelectorAll('button').forEach((btn) => {
+        btn.innerText = paths[j];
+        j++;
+      });
+
+    </script>
 
   </body>
 </html>

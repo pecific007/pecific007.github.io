@@ -88,20 +88,19 @@ header {
     margin: 1rem;
   }
 
+
   .content {
     margin-top: -5em;
     padding: 5em 0;
     display: grid;
     grid-auto-flow: row;
-    /* display: flex;
-    flex-direction: column; */
     gap: .01em;
     height: 80vh;
     width: 100vw;
   }
   .scroll {
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
   }
 
   .card_all {
@@ -122,5 +121,7 @@ header {
   .image {
     width: var(--image-height);
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 }
