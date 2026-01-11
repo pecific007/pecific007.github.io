@@ -206,8 +206,7 @@ a {
 .card {
   background-color: var(--purpwhite);
   color: var(--ltblack);
-  box-sizing: content-box;
+  box-sizing: border-box;
   border-radius: 1rem;
   padding: 1em;
-  display: grid;
 }

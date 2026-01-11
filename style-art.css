@@ -91,10 +91,21 @@ header {
   .content {
     margin-top: -5em;
     padding: 5em 0;
+    gap: .01em;
+    width: 100vw;
+    place-content: center;
+  }
+  .scroll {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+
+  /* .content {
+    margin-top: -5em;
+    padding: 5em 0;
     display: grid;
     grid-auto-flow: row;
-    /* display: flex;
-    flex-direction: column; */
     gap: .01em;
     height: 80vh;
     width: 100vw;
@@ -102,7 +113,7 @@ header {
   .scroll {
     overflow-y: scroll;
     scroll-snap-type: y proximity;
-  }
+  } */
 
   .card_all {
     margin: .1em 0;
