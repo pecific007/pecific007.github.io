@@ -2,6 +2,7 @@ const template = document.querySelector('#card_template');
 const content = document.querySelector('.content');
 
 const list_all = {
+    "":"",
     "Blackhole - 1" : "A 3D render of blackhole",
     "Blackhole - 2" : "A 3D render of blackhole",
     "Blackhole - 3" : "A 3D render of blackhole",
@@ -21,7 +22,8 @@ const list_all = {
     "Kitchen - 1" : "A 3D render of a kitchen",
     "Kitchen - 2" : "A 3D render of a kitchen",
     "Kitchen - 3" : "A 3D render of a kitchen",
-    "Kitchen - 4" : "A 3D render of a kitchen"
+    "Kitchen - 4" : "A 3D render of a kitchen",
+    " ":" "
 }
 
 const title_text = Object.keys(list_all); 
@@ -34,14 +36,21 @@ for (let i = 0; i < total_images; i++) {
     content.innerHTML += template.innerHTML;
 }
 
-let l = 1;
+let l = 0;
 document.querySelectorAll('.image').forEach(img => {
     img.src = `Images/${l}.png`;
-    img.alt = alt_text[l-1];
+    img.alt = alt_text[l];
     l++;
-})
+});
 l=0;
 document.querySelectorAll('.title').forEach(title => {
     title.textContent = title_text[l];
     l++;
-})
+});
+l=0;
+const all_cards = document.querySelectorAll('.card');
+all_cards[0].style.opacity = "0";
+all_cards[21].style.opacity = "0";
+if (window.innerWidth <= 700) {
+    all_cards[0].remove() 
+}
