@@ -1,15 +1,19 @@
 function showCode(code) {
+  // First hide all the code
   document.querySelectorAll(".frames").forEach((frames) => {
     frames.style.display = "none";
   });
+  // Play the loading animation
   document.querySelector(".loading_page").style.display = "flex";
   document.querySelector(".loading_color").style.animationPlayState = "running";
   document
     .querySelector(".loading_color")
     .addEventListener("animationend", function () {
+      // When animation ends, hide loading page
       document.querySelector(".loading_page").style.display = "none";
     });
 
+  // Call the loading page function
   loadLoadingPage();
 
   document.querySelector(`#${code}`).style.display = "block";
@@ -26,11 +30,10 @@ function loadLoadingPage() {
     });
 }
 
-function shwoType(type) {
+function showType(type) {
   document.querySelectorAll(".ALL").forEach((all) => {
     all.style.display = "none";
   });
-  document.querySelector(".loading_page").style.display = "none";
   document.querySelector(`#${type}`).style.display = "block";
 }
 
@@ -38,19 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".loading_page").style.display = "none";
   document.querySelector(`#type1`).style.display = "block";
   document.querySelector("#code1").style.display = "block";
-  let autoSelect = document
-    .querySelectorAll(".autoSelect")
-    .forEach((autoSelect) => {
-      autoSelect.style.backgroundColor = "#fff";
-      autoSelect.style.color = "#000";
-      autoSelect.style.animationPlayState = "running";
-      autoSelect.style.animationFillMode = "forwards";
-    });
+  document.querySelectorAll(".autoSelect").forEach((autoSelect) => {
+    autoSelect.style.backgroundColor = "#fff";
+    autoSelect.style.color = "#000";
+    autoSelect.style.animationPlayState = "running";
+    autoSelect.style.animationFillMode = "forwards";
+  });
   let code4 = document.querySelector("#code4");
   code4.style.display = "block";
 
   let typehtml = document.querySelector("#type_html");
-  let toggle = document.querySelector('.toggle');
+  let toggle = document.querySelector(".toggle");
   toggle.style.animationPlayState = "running";
   toggle.style.animationDirection = "normal";
   typehtml.style.color = "#fff";
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function changeStyleToggle() {
     if (htmlCssToggle.checked) {
-      shwoType("type2");
+      showType("type2");
       loadLoadingPage();
       let indexCss = document.querySelector("#autoSelectCss");
       code4.style.display = "block";
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       typehtml.style.color = "#000";
       typecss.style.color = "#fff";
     } else {
-      shwoType("type1");
+      showType("type1");
       showCode("code1");
       typecss.style.filter = "none";
       toggle.style.animationPlayState = "running";
