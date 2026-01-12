@@ -3,8 +3,10 @@
   --purpwhite: #ffe5ff;
   /* --violet: #8a2ce2; */
   --blueViolet: #6650ed;
+  /* --blueViolet: #718bfc; */
   --ltblack: #1c1b22;
   --max-width: 20000px;
+  --min-width: fit-content;
 }
 
 .roboto-normal {
@@ -42,6 +44,7 @@ body {
     var(--ltblack) 80%
   );
   max-width: var(--max-width);
+  min-width: var(--min-width);
 }
 
 body::selection {
