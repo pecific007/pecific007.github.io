@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addForm.dataset.display = "none";
     });
 
-    list.addEventListener('click', showForm)
+    list.addEventListener('click', showForm);
 
     addForm.querySelector('#addTask').addEventListener('click', () => {
         if (noTask.style.display !== "none") {
@@ -75,16 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
         let done = event.target;
         if (done.className === "done") {
             done.parentElement.style.animationName = "done";
-            done.parentElement.style.animationPlayState = "running";
             done.parentElement.style.animationFillMode = "backwards";
-            done.parentElement.addEventListener('animationend', () => {
+            done.parentElement.style.animationDirection = "alternate";
+
                 if(done.previousElementSibling.dataset.linethrough == "false") {
+                    done.parentElement.style.animationPlayState = "running";
                     done.previousElementSibling.dataset.linethrough = "true";
                 }
                 else if (done.previousElementSibling.dataset.linethrough == "true") {
+                    done.parentElement.style.animationPlayState = "running";
                     done.previousElementSibling.dataset.linethrough = "false";
                 }
-            });
 
             let i = 0;
             list.querySelectorAll('li').forEach((li) => {
@@ -100,8 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 i++;
             });
+            done.parentElement.style.animationDirection = "normal";
         }
         else if (done.className === "remove") {
+            done.parentElement.style.animationDirection = "normal";
             curr_task = done.parentElement
 
             let index = 0;
@@ -124,13 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     list.appendChild(el)
                 }
             })
-
-            // addToList();
-            // if (list.childNodes.length == 0) {
-            //     let el = document.createElement('p');
-            //     el.innerHTML = noTaskContent;
-            //     list.appendChild(el)
-            // }
+            curr_task.style.animationDirection = "normal";
         }
     });
     
