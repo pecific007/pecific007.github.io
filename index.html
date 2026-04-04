@@ -1,181 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming</title>
-    <link rel="icon" href="Images/icons/Logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style-index.css" />
-    <link rel="stylesheet" href="style-general.css" />
-    <script src="index.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Programming</title>
+        <link rel="icon" href="Images/icons/Logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style-index.css" />
+        <link rel="stylesheet" href="style-general.css" />
+        <script src="index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="webname">Pecific</div>
-      <div class="nav">
-        <ul class="ul" type="none">
-          <li class="high li">Programming</li>
-          <a href="art.html">
-            <li class="li">Art</li>
-          </a>
-          <a href="socials.html">
-            <li class="li">Socials</li>
-          </a>
-        </ul>
-      </div>
-    </nav>
+    <body>
+        <nav class="navbar">
+            <div class="webname">Pecific</div>
+            <div class="nav">
+                <ul class="ul" type="none">
+                    <li class="high li">Programming</li>
+                    <a href="art.html">
+                        <li class="li">Art</li>
+                    </a>
+                    <a href="socials.html">
+                        <li class="li">Socials</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
 
-    <main class="content">
+        <main class="content">
+            <h1 class="greet">Welcome!</h1>
 
-      <h1 class="greet">Welcome!</h1>
+            <div class="solar">
+                <iframe
+                    class="system"
+                    src="soarsystem.html"
+                    frameborder="5"
+                ></iframe>
+            </div>
 
-      <div class="solar">
-        <iframe class="system" src="soarsystem.html" frameborder="5"></iframe>
-      </div>
-      
-      <div class="know">
-        <div class="lang" id="lang">
-          <div class="name">
-            <!-- <h1 class="lang">C</h1> -->
-            <h1>C Lang.</h1>
-          </div>
-        </div>
-        <div
-          class="lang lang_class"
-          id="lang-html"
-          onclick="changeStyle('html')"
-        >
-          <div class="name">
-            <!-- <h1 class="lang">C</h1> -->
-            <h1>HTML</h1>
-          </div>
-        </div>
-        <div class="lang span-two" id="lang">
-          <div class="name">
-            <!-- <h1 class="lang">C</h1> -->
-            <h1>Lua</h1>
-          </div>
-        </div>
-        <div class="lang lang_class" id="lang-css" onclick="changeStyle('css')">
-          <div class="name">
-            <!-- <h1 class="lang">C</h1> -->
-            <h1>CSS</h1>
-          </div>
-        </div>
-        <div class="lang" id="lang">
-          <div class="name">
-            <!-- <h1 class="lang">C</h1> -->
-            <h1>Bash</h1>
-          </div>
-        </div>
-      </div>
+            <div class="know">
+                <div class="lang" id="lang">
+                    <div class="name">
+                        <h1>C lang</h1>
+                    </div>
+                </div>
+                <div class="lang" id="lang">
+                    <div class="name">
+                        <h1>Go lang</h1>
+                    </div>
+                </div>
+                <div class="lang span-two" id="lang">
+                    <div class="name">
+                        <h1>Lua</h1>
+                    </div>
+                </div>
+                <div class="lang" id="lang-html">
+                    <div class="name">
+                        <h1>HTML</h1>
+                    </div>
+                </div>
+                <div class="lang lang_class">
+                    <div class="name">
+                        <h1>CSS</h1>
+                    </div>
+                </div>
+            </div>
 
-      <div class="cd-html" id="code-html">
-        <iframe
-          class="iframe"
-          src="markdown-website/index-code.html"
-          frameborder="0"
-        ></iframe>
-        <iframe
-          class="iframe"
-          src="markdown-website/art-code.html"
-          frameborder="0"
-        ></iframe>
-        <iframe
-          class="iframe"
-          src="markdown-website/socials-code.html"
-          frameborder="0"
-        ></iframe>
-      </div>
-
-      <div class="cd-css" id="code-css">
-        <iframe
-          class="iframe"
-          src="markdown-website/style-general-code.html"
-          frameborder="0"
-        ></iframe>
-        <iframe
-          class="iframe"
-          src="markdown-website/style-index-code.html"
-          frameborder="0"
-        ></iframe>
-        <iframe
-          class="iframe"
-          src="markdown-website/style-art-code.html"
-          frameborder="0"
-        ></iframe>
-        <iframe
-          class="iframe"
-          src="markdown-website/style-socials-code.html"
-          frameborder="0"
-        ></iframe>
-      </div>
-      
-      <div class="hub forComp">
-        <h1 class="game">Checkout the Source code for this website!</h1>
-        <a href="source.html" target="_blank">
-          <button class="blue_button">Click here!</button>
-        </a>
-      </div>
-
-      <div class="hub">
-        <h1 class="game">Checkout my TODO app!</h1>
-        <a href="todoApp/Todo.html" target="_blank">
-          <button class="blue_button">Click here!</button>
-        </a>
-      </div>
-      <!-- <div class="hub forMobile">
+            <div class="hub">
+                <h1 class="game">Checkout my TODO app!</h1>
+                <a href="todoApp/Todo.html" target="_blank">
+                    <button class="blue_button">Click here!</button>
+                </a>
+            </div>
+            <!-- <div class="hub forMobile">
         <h1 class="game">Checkout the Source code for this website!</h1>
           <button class="play_now_button" onclick="changeStyle('html')">Click here!</button>
       </div> -->
-      <div class="hub">
-        <h1>My Scratch Project - made using</h1>
-        <a
-          href="https://scratch.mit.edu"
-          style="font-weight: 900; text-decoration: underline"
-          target="_blank"
-          >scratch.mit.edu</a
-        >
-        <h1 class="game">The Crab Game</h1>
-        <a href="https://scratch.mit.edu/projects/1169620812/" target="_blank">
-          <button class="blue_button">Play Now!</button>
-        </a>
-      </div>
-    </main>
+            <div class="hub">
+                <h1>My Scratch Project - made using</h1>
+                <a
+                    href="https://scratch.mit.edu"
+                    style="font-weight: 900; text-decoration: underline"
+                    target="_blank"
+                    >scratch.mit.edu</a
+                >
+                <h1 class="game">The Crab Game</h1>
+                <a
+                    href="https://scratch.mit.edu/projects/1169620812/"
+                    target="_blank"
+                >
+                    <button class="blue_button">Play Now!</button>
+                </a>
+            </div>
+        </main>
 
-    <aside class="btmbar">
-      <span class="raiseup high li" title="Programming">
-        <img
-          class="btbr_img"
-          src="Images/icons/programming-svgrepo-com.svg"
-          alt=""
-        />
-      </span>
-      <a href="art.html">
-        <span class="li" title="Art">
-          <img
-            class="btbr_img"
-            src="Images/icons/art-palette-svgrepo-com.svg"
-            alt=""
-          />
-        </span>
-      </a>
-      <a href="socials.html">
-        <span class="li" title="Socials">
-          <img
-            class="btbr_img"
-            src="Images/icons/social-youtube-svgrepo-com.svg"
-            alt=""
-          />
-        </span>
-      </a>
-    </aside>
-  </body>
+        <aside class="btmbar">
+            <span class="raiseup high li" title="Programming">
+                <img
+                    class="btbr_img"
+                    src="Images/icons/programming-svgrepo-com.svg"
+                    alt=""
+                />
+            </span>
+            <a href="art.html">
+                <span class="li" title="Art">
+                    <img
+                        class="btbr_img"
+                        src="Images/icons/art-palette-svgrepo-com.svg"
+                        alt=""
+                    />
+                </span>
+            </a>
+            <a href="socials.html">
+                <span class="li" title="Socials">
+                    <img
+                        class="btbr_img"
+                        src="Images/icons/social-youtube-svgrepo-com.svg"
+                        alt=""
+                    />
+                </span>
+            </a>
+        </aside>
+    </body>
 </html>
