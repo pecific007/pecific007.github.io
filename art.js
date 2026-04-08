@@ -24,8 +24,6 @@ const list_all = {
   "Kitchen_-_4": "A 3D render of a kitchen",
 };
 
-const title_text = Object.keys(list_all);
-
 for (let path in list_all) {
   el = document.createElement("div");
   el.classList.add("card_all");
@@ -35,9 +33,8 @@ for (let path in list_all) {
   img.src = `Images/${path}.png`;
   img.alt = list_all[path];
   el.querySelector(".title").textContent = path.replaceAll("_", " ");
-  if (path == "Blank_100px") {
-    el.style.visibility = "hidden";
-    el.ariaHidden = "true";
-  }
+  // if (path == "Blank_100px") {
+  //   el.style.visibility = "hidden";
+  //   el.ariaHidden = "true";
+  // }
 }
-content.scrollTo(160, 0);
