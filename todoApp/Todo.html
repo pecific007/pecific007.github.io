@@ -1,42 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo</title>
-    <link rel="stylesheet" href="todo.css">
-    <script src="todo.js"></script>
-</head>
-<body>
-    <main class="container">
-        <header class="headbar">
-            <h1 class="title"><strong>Todo:</strong></h1>
-            <div class="add_task_head">
-                <label for="addnew">Add New Task</label>
-                <button id="addnew" class="add_button" class="Add new task">+</button>
-            </div>
-        </header>
-        <h1 class="sub-title">-: Tasks :-</h1>
-        <div data-display="none" id="taskForm">
-            <form class="add_form_form" method="post" onsubmit="return false">
-                <div class="form_content_wrap">
-                    <label for="taskText">Task:</label>
-                    <input id="taskText" placeholder="Enter task" type="text">
-                    <div id="close_dialog" title="Close form">&times;</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo</title>
+        <link rel="stylesheet" href="todo.css" />
+        <script src="todo.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <header class="headbar">
+                <h1 class="title"><strong>Todo:</strong></h1>
+                <div class="add_task_head">
+                    <label for="addnew">Add New Task</label>
+                    <button id="addnew" class="add_button" class="Add new task">
+                        +
+                    </button>
                 </div>
-                <button id="addTask">Add</button>
-            </form>
-        </div>
-        <ol id="list">
-            <p id="noTasks">No Tasks!</p>
-        </ol>
-    </main>
-    <template id="template">
-        <li class="listTask" id="taskItem">
-            <div data-linethrough="false" class="text"></div>
-            <button class="done" title="Task finished!">&check;</button>
-            <button class="remove" title="Remove Task">&cross;</button>
-        </li>
-    </teimplate>
-</body>
+            </header>
+            <h1 class="sub-title">-: Tasks :-</h1>
+            <div data-display="none" id="taskForm">
+                <form
+                    class="add_form_form"
+                    method="post"
+                    onsubmit="return false;"
+                >
+                    <div class="form_content_wrap">
+                        <label for="taskText">Task:</label>
+                        <input
+                            id="taskText"
+                            placeholder="Enter task"
+                            type="text"
+                        />
+                        <div id="close_dialog" title="Close form">&times;</div>
+                    </div>
+                    <button id="addTask">Add</button>
+                </form>
+            </div>
+            <ol id="list">
+                <p id="noTasks">No Tasks!</p>
+            </ol>
+        </main>
+        <template id="template">
+            <li class="listTask" id="taskItem">
+                <div data-linethrough="false" class="text"></div>
+                <button class="done" title="Task finished!">&check;</button>
+                <button class="remove" title="Remove Task">&cross;</button>
+            </li>
+        </template>
+    </body>
 </html>

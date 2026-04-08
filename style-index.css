@@ -1,173 +1,170 @@
 .content {
-  height: max-content;
-  width: max-content;
-  display: grid;
-  gap: 1.8rem;
+    height: max-content;
+    width: max-content;
+    display: grid;
+    gap: 1.8rem;
 }
 
-.know {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-bottom: 50px;
-  border-bottom: 1px solid var(--purpwhite);
+.favs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--purpwhite);
 }
 
 .lang {
-  border: 3px solid var(--blueViolet);
-  border-radius: 1rem;
-  padding: 20px;
-  display: grid;
-  cursor: context-menu;
-  filter: none;
-  background: linear-gradient(
-    to bottom,
-    var(--ltblack) 80%,
-    rgba(43, 39, 255, 0.2)
-  );
+    border: 3px solid var(--blueViolet);
+    border-radius: 1rem;
+    padding: 20px;
+    display: grid;
+    cursor: context-menu;
+    filter: none;
+    background: linear-gradient(
+        to bottom,
+        var(--ltblack) 80%,
+        rgba(43, 39, 255, 0.2)
+    );
 }
 
 .lang:hover {
-  /* box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.9); */
-  filter: drop-shadow(0px 0px 5px rgba(255, 228, 255, 0.9));
-  scale: 104%;
-  border-color: var(--purpwhite);
-  background: transparent;
+    /* box-shadow: 0px 0px 20px rgba(137, 43, 226, 0.9); */
+    filter: drop-shadow(0px 0px 5px rgba(255, 228, 255, 0.9));
+    scale: 104%;
+    border-color: var(--purpwhite);
+    background: transparent;
 }
 
-@keyframes appear{
-  0% {
-    opacity: 0;
-    height: 0%;
-  }
-  100% {
-    opacity: 1;
-    height: 100%;
-  }
+@keyframes appear {
+    0% {
+        opacity: 0;
+        height: 0%;
+    }
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
 }
-@keyframes dissappear{
-  0% {
-    opacity: 1;
-    height: 100%;
-  }
-  100% {
-    opacity: 0;
-    height: 0%;
-  }
+@keyframes dissappear {
+    0% {
+        opacity: 1;
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        height: 0%;
+    }
 }
 
 .cd-html,
 .cd-css {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  /* display: flex; */
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 1rem;
-  animation-play-state: running;
-  animation-duration: 1s;
-  animation-play-state: paused;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    /* display: flex; */
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 1rem;
+    animation-play-state: running;
+    animation-duration: 1s;
+    animation-play-state: paused;
 }
 
 .iframe {
-  width: 100%;
-  height: 100%;
-  flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
 }
 
 @keyframes greet {
-  to {opacity : 1}
+    to {
+        opacity: 1;
+    }
 }
 
 .greet {
-  font-size: 5rem;
-  opacity: 0;
-  border-bottom: 1px solid var(--purpwhite);
-  /* Animation */
-  animation-name: greet;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
+    font-size: 5rem;
+    opacity: 0;
+    border-bottom: 1px solid var(--purpwhite);
+    /* Animation */
+    animation-name: greet;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 .solar {
-  width: 100%;
+    width: 100%;
 }
 .system {
-  width: 1650px;
-  height: 435px;
+    width: 1650px;
+    height: 435px;
 }
 
-
 .hub {
-  display: grid;
-  text-align: center;
-  border-top: 1px solid var(--purpwhite);
-  padding-top: 20px;
-  width: 100%;
+    display: grid;
+    text-align: center;
+    border-top: 1px solid var(--purpwhite);
+    padding-top: 20px;
+    width: 100%;
 }
 
 .game {
-  font-size: 2em;
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 10px;
+    font-size: 2em;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .forComp {
-  display: block;
+    display: block;
 }
 .forMobile {
-  display: none;
+    display: none;
 }
-
 
 @media screen and (max-width: 900px) {
-  .greet {
-    font-size: 3em;
-  }
+    .greet {
+        font-size: 3em;
+    }
 
-  .forMobile {
-    display: block
-  }
-  .forComp {
-    display: none;
-  }
+    .forMobile {
+        display: block;
+    }
+    .forComp {
+        display: none;
+    }
 
-  .know {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 10rem 10rem;
-    text-align: center;
-  }
+    .favs {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 10rem 10rem;
+        text-align: center;
+    }
 
-  .span-two {
-    grid-column: span 2;
-  }
+    .span-two {
+        grid-column: span 2;
+    }
 
-  .lang {
-    font-size: 1rem;
-    width: 5rem;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-  }
+    .lang {
+        font-size: 1rem;
+        width: 5rem;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
 
-  .solar {
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-  .system {
-    height: 800px;
-    width: 85%;
-  }
+    .solar {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .system {
+        height: 800px;
+        width: 85%;
+    }
 
-  
-  .hub {
-    width: 60vw;
-  }
+    .hub {
+        width: 60vw;
+    }
 }
-
-
