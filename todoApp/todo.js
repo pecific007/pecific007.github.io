@@ -73,53 +73,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('click', (event) => {
         let done = event.target;
+        let par = done.parentElement;
         if (done.className === "done") {
-            done.parentElement.style.animationName = "done";
-            done.parentElement.style.animationFillMode = "backwards";
-            done.parentElement.style.animationDirection = "alternate";
+            par.style.animationFillMode = "backwards";
+            par.style.animationDirection = (done.previousElementSibling.dataset.linethrough == "true") ? "reverse" : "normal";
 
-                if(done.previousElementSibling.dataset.linethrough == "false") {
-                    done.parentElement.style.animationPlayState = "running";
-                    done.previousElementSibling.dataset.linethrough = "true";
-                }
-                else if (done.previousElementSibling.dataset.linethrough == "true") {
-                    done.parentElement.style.animationPlayState = "running";
-                    done.previousElementSibling.dataset.linethrough = "false";
-                }
+            if(done.previousElementSibling.dataset.linethrough == "false") {
+                par.style.animationName = "";
+                void par.offsetWidth;
+                par.style.animationName = "done";
+                par.style.animationPlayState = "running";
+                done.previousElementSibling.dataset.linethrough = "true";
+            }
+            else if (done.previousElementSibling.dataset.linethrough == "true") {
+                par.style.animationName = "";
+                void par.offsetWidth;
+                par.style.animationName = "done";
+                par.style.animationPlayState = "reverse";
+                par.style.animationPlayState = "running";
+                done.previousElementSibling.dataset.linethrough = "false";
+            }
 
             let i = 0;
             list.querySelectorAll('li').forEach((li) => {
                 if (li.querySelector('.text').dataset.linethrough == "true") {
                     done_tasks[i] = "true";
-                }
-                i++;
-            })
-            i = 0;
-            list.querySelectorAll('li').forEach((li) => {
-                if (li.querySelector('.text').dataset.linethrough == "false") {
+                } else if (li.querySelector('.text').dataset.linethrough == "false") {
                     done_tasks[i] = "false";
                 }
                 i++;
-            });
-            done.parentElement.style.animationDirection = "normal";
+            })
+            par.style.animationDirection = "normal";
         }
         else if (done.className === "remove") {
-            done.parentElement.style.animationDirection = "normal";
-            curr_task = done.parentElement
+            par.style.animationDirection = "normal";
 
             let index = 0;
             for (index ; index < tasks.length; index++) {
-                if (tasks[index] == curr_task.querySelector('.text').innerHTML) {
+                if (tasks[index] == par.querySelector('.text').innerHTML) {
                     break;
                 }
             }
             tasks.splice(index, 1);
             done_tasks.splice(index, 1);
-            
-            curr_task.style.animationName = "delete";
-            curr_task.style.animationPlayState = "running";
-            done.parentElement.style.animationFillMode = "forwards";
-            curr_task.addEventListener('animationend', () => {
+
+            par.style.animationName = "delete";
+            par.style.animationPlayState = "running";
+            par.style.animationFillMode = "forwards";
+            par.addEventListener('animationend', () => {
                 addToList();
                 if (list.childNodes.length == 0) {
                     let el = document.createElement('p');
@@ -127,9 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     list.appendChild(el)
                 }
             })
-            curr_task.style.animationDirection = "normal";
+            par.style.animationDirection = "normal";
         }
     });
-    
 
 });

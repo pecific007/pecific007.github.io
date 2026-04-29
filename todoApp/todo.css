@@ -197,9 +197,7 @@ body {
     margin-block: var(--gap-default);
 
     /* Animation */
-    /* animation-name: delete; */
     animation-duration: 500ms;
-    /* animation-fill-mode: forwards; */
     animation-play-state: paused;
     animation-timing-function: ease-out;
 
