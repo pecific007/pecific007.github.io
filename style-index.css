@@ -101,7 +101,7 @@
     height: 435px;
 }
 
-.hub {
+.section {
     display: grid;
     text-align: center;
     border-top: 1px solid var(--purpwhite);
@@ -109,7 +109,7 @@
     width: 100%;
 }
 
-.game {
+.h1_style {
     font-size: 2em;
     display: block;
     margin-top: 20px;
