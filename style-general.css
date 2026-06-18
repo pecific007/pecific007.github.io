@@ -195,6 +195,21 @@ a {
   padding: 1ch 2ch;
   cursor: pointer;
 }
+.blue_button:disabled {
+  filter: brightness(0.5);
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 1ch 2ch;
+  cursor: pointer;
+}
+
+.blue_button:disabled:hover {
+  filter: brightness(0.5);
+  box-shadow: none;
+  scale: 100%;
+}
+
 .blue_button:hover {
   box-shadow: 0px 0px 20px hsla(248, 81%, 62%, 0.9);
   scale: 110%;
