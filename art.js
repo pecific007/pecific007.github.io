@@ -30,7 +30,7 @@ for (let path in list_all) {
   el.innerHTML = template.innerHTML;
   content.appendChild(el);
   img = el.querySelector("img");
-  img.src = `Images/${path}.png`;
+  img.src = `Images/${path}.webp`;
   img.alt = list_all[path];
   el.querySelector(".title").textContent = path.replaceAll("_", " ");
   // if (path == "Blank_100px") {
