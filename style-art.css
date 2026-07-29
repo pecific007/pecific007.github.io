@@ -28,6 +28,7 @@ body {
 }
 .content {
   display: grid;
+  padding: 5em 0 var(--bottom-navbar-height);
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   gap: 3em;
@@ -73,18 +74,18 @@ body {
     --image-height: 100%;
   }
 
-  .main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-  }
   .field_name {
-    display: inline-block;
-    font-size: 1em;
-    flex-grow: 1;
-    margin: 1rem;
+      display: inline-block;
+      font-size: 1em;
+      flex-grow: 1;
+      margin: 1rem;
   }
 
+  .main {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+  }
 
   .content {
     margin-top: -5em;
@@ -98,6 +99,7 @@ body {
   .scroll {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-padding-bottom: var(--bottom-navbar-height);
   }
 
   .card_all {
