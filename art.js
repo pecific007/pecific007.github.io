@@ -32,6 +32,7 @@ for (let path in list_all) {
   img = el.querySelector("img");
   img.src = `Images/${path}.webp`;
   img.alt = list_all[path];
+  img.loading = "lazy";
   el.querySelector(".title").textContent = path.replaceAll("_", " ");
   // if (path == "Blank_100px") {
   //   el.style.visibility = "hidden";
