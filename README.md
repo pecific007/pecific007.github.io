@@ -5,4 +5,4 @@ This website is where I will be uploading things that I've been working on and s
 > [!NOTE] 
 >All of the images in the "Art" page are made by me (mostly in [Blender3d](https://www.blender.org/download/)).
 
-**https://pecific007.github.io/index.html**
+**https://pecific007.github.io/**
