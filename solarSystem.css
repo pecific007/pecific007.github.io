@@ -18,30 +18,30 @@ body {
   width: fit-content;
   background-image: radial-gradient(
     circle at 13%,
-    rgba(0, 0, 0, 0)18%,
+    transparent 18%,
     #fff,
-    rgba(0, 0, 0, 0)18.2%,
-    rgba(0, 0, 0, 0)22%,
+    transparent 18.2%,
+    transparent 22%,
     #fff,
-    rgba(0, 0, 0, 0)22.2%,
-    rgba(0, 0, 0, 0)28.5%,
+    transparent 22.2%,
+    transparent 28.5%,
     #fff,
-    rgba(0, 0, 0, 0) 28.7%,
-    rgba(0, 0, 0, 0)35%,
+    transparent  28.7%,
+    transparent 35%,
     #fff,
-    rgba(0, 0, 0, 0)35.2%,
-    rgba(0, 0, 0, 0) 50%,
+    transparent 35.2%,
+    transparent  50%,
     #fff,
-    rgba(0, 0, 0, 0) 50.2%,
-    rgba(0, 0, 0, 0) 67.5%,
+    transparent  50.2%,
+    transparent  67.5%,
     #fff,
-    rgba(0, 0, 0, 0) 67.7%,
-    rgba(0, 0, 0, 0) 83%,
+    transparent  67.7%,
+    transparent  83%,
     #fff,
-    rgba(0, 0, 0, 0) 83.2%,
-    rgba(0, 0, 0, 0) 93%,
+    transparent  83.2%,
+    transparent  93%,
     #fff,
-    rgba(0, 0, 0, 0) 93.2%
+    transparent  93.2%
   );
 }
 
@@ -55,7 +55,6 @@ body {
   height: 400px;
   padding: 10px 20px;
   border-radius: 100%;
-  transition: all ease-in-out 0.2s;
   filter: drop-shadow(0 0 10vw rgb(255, 166, 0));
   animation-duration: 4s;
 }
@@ -162,30 +161,30 @@ body {
   .solSyst {
     background-image: radial-gradient(
       circle at 50% 13%,
-      rgba(0, 0, 0, 0)19%,
+      transparent 19%,
       #fff,
-      rgba(0, 0, 0, 0)19.2%,
-      rgba(0, 0, 0, 0)23%,
+      transparent 19.2%,
+      transparent 23%,
       #fff,
-      rgba(0, 0, 0, 0)23.2%,
-      rgba(0, 0, 0, 0)28.5%,
+      transparent 23.2%,
+      transparent 28.5%,
       #fff,
-      rgba(0, 0, 0, 0) 28.7%,
-      rgba(0, 0, 0, 0)36%,
+      transparent  28.7%,
+      transparent 36%,
       #fff,
-      rgba(0, 0, 0, 0)36.2%,
-      rgba(0, 0, 0, 0) 47.5%,
+      transparent 36.2%,
+      transparent  47.5%,
       #fff,
-      rgba(0, 0, 0, 0) 47.7%,
-      rgba(0, 0, 0, 0) 65.5%,
+      transparent  47.7%,
+      transparent  65.5%,
       #fff,
-      rgba(0, 0, 0, 0) 65.7%,
-      rgba(0, 0, 0, 0) 83%,
+      transparent  65.7%,
+      transparent  83%,
       #fff,
-      rgba(0, 0, 0, 0) 83.2%,
-      rgba(0, 0, 0, 0) 93%,
+      transparent  83.2%,
+      transparent  93%,
       #fff,
-      rgba(0, 0, 0, 0) 93.2%
+      transparent  93.2%
     );
   }
     
