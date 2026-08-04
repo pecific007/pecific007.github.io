@@ -24,7 +24,22 @@ function main() {
     },
   ]
 
-  const page = new URLSearchParams(location.search).get("page") ?? "index";
+  const page = new URLSearchParams(location.search).get("page").toLowerCase() ?? "index";
+
+  if (page == 'index') {
+    document.title = "Pecific007"
+  } else {
+    for (let p of pages) {
+      // console.log(page == p.id);
+      if (page == p.id) {
+        document.title = p.name;
+        break;
+      } else {
+        document.title = "Pecific007";
+      }
+    }
+  }
+
   showHeader();
   showPage();
   loadStyle();
@@ -47,7 +62,9 @@ function main() {
     <div class="webname">Pecific</div>
     <div class="nav">
         <ul class="ul" type="none">
-            <li class="high li">Programming</li>
+            <a href="?page=index">
+              <li class="high li">Programming</li>
+            </a>
             <a href="?page=art">
                 <li class="li">Art</li>
             </a>
