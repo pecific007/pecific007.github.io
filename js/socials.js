@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export function init() {
       const container = document.querySelector('.card_container');
       const template = document.querySelector("#card_template");
       // All links to display:
@@ -13,28 +13,28 @@ document.addEventListener('DOMContentLoaded', () => {
         "Sketchfab": "https://sketchfab.com/Minute_watchers_64"
       }
 
-      for (name in icons) {
-        el = document.createElement('label');
+      for (let site in icons) {
+        let el = document.createElement('label');
         el.classList.add('card')
         el.innerHTML = template.innerHTML;
-        img = el.querySelector('img');
-        img.src = `Images/icons/${name}.svg`;
-        img.alt = `Logo: ${name}`;
-          if (name == "MonkeyType") {
+        let img = el.querySelector('img');
+        img.src = `media/icons/${site}.svg`;
+        img.alt = `Logo: ${site}`;
+          if (site == "MonkeyType") {
             img.style.width = "6rem";
             img.style.paddingInline = ".5rem";
           }
-          else if (name == "GitLab") {
+          else if (site == "GitLab") {
             img.style.width = "6rem";
             img.style.height = "6rem";
             img.style.backgroundColor = "#6650edAA";
             img.style.borderRadius = "15px";
             img.style.paddingInline = ".8rem";
           }
-        btn = el.querySelector('button');
-        btn.textContent = name;
-        link = el.querySelector('a');
-        link.href = icons[name];
+        let btn = el.querySelector('button');
+        btn.textContent = site;
+        let link = el.querySelector('a');
+        link.href = icons[site];
         container.appendChild(el);
       }
-});
+};
