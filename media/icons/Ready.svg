@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="ready-logo.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="1.2487226"
+     inkscape:cx="253.05861"
+     inkscape:cy="287.8942"
+     inkscape:window-width="1920"
+     inkscape:window-height="1044"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#e6e6e6;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#666666;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="-0.041412354"
+       y1="256"
+       x2="399.56119"
+       y2="479.11646"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.97138434,0,0,0.97138431,7.325603,7.3256184)" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter28"
+       x="-0.028848781"
+       y="0"
+       width="1.057838"
+       height="1.123884">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.419608"
+         flood-color="rgb(39,44,51)"
+         id="feFlood27" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="3.118 0"
+         id="feGaussianBlur27" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.036422"
+         dy="4.769449"
+         id="feOffset27" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite27" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite28" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#22272e;fill-opacity:1;stroke:url(#linearGradient2);stroke-width:19.4277;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="492.57233"
+       height="492.5723"
+       x="9.7138367"
+       y="9.7138519"
+       ry="30.667715" />
+    <rect
+       style="fill:#1c2128;fill-opacity:1;stroke:#555555;stroke-width:4.77195;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="138.6046"
+       height="435.035"
+       x="36.385975"
+       y="36.895599"
+       ry="12.28041" />
+    <rect
+       style="fill:#22272e;fill-opacity:1;stroke:#555555;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3-8"
+       width="291.34515"
+       height="434.16492"
+       x="185.84195"
+       y="38.203968"
+       ry="14.246378" />
+    <rect
+       style="fill:#22272e;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter28)"
+       id="rect3-8-6"
+       width="259.39398"
+       height="38.499302"
+       x="202.84084"
+       y="44.032299"
+       ry="0" />
+    <rect
+       style="fill:#3a4149;fill-opacity:1;stroke:none;stroke-width:1.68662;stroke-dasharray:none;stroke-opacity:1"
+       id="rect34"
+       width="86.53009"
+       height="27.854013"
+       x="209.59004"
+       y="49.297112"
+       ry="5.0228577" />
+    <text
+       xml:space="preserve"
+       style="font-size:12.0022px;writing-mode:lr-tb;direction:ltr;fill:#3a4149;fill-opacity:1;stroke:none;stroke-width:0.702632;stroke-dasharray:none;stroke-opacity:1"
+       x="216.50577"
+       y="67.399246"
+       id="text34"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         x="216.50577"
+         y="67.399246"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.702632">🖹 hello.py ×</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#f47067;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="229.85851"
+       y="134.53922"
+       id="text37"><tspan
+         sodipodi:role="line"
+         id="tspan37"
+         x="229.85851"
+         y="134.53922">def</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#cea5ff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="287.60513"
+       y="134.83395"
+       id="text38"><tspan
+         sodipodi:role="line"
+         id="tspan38"
+         x="287.60513"
+         y="134.83395">hello</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="358.58859"
+       y="136.30618"
+       id="text39"><tspan
+         sodipodi:role="line"
+         id="tspan39"
+         x="358.58859"
+         y="136.30618">(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="328.05408"
+       y="164.64005"
+       id="text39-6"><tspan
+         sodipodi:role="line"
+         id="tspan39-7"
+         x="328.05408"
+         y="164.64005">(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="314.94131"
+       y="195.53279"
+       id="text39-6-8"><tspan
+         sodipodi:role="line"
+         id="tspan39-7-1"
+         x="314.94131"
+         y="195.53279">)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="232.7462"
+       y="195.15996"
+       id="text39-6-9"><tspan
+         sodipodi:role="line"
+         id="tspan39-7-3"
+         x="232.7462"
+         y="195.15996">,</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#cea5ff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="258.37082"
+       y="164.13258"
+       id="text40"><tspan
+         sodipodi:role="line"
+         id="tspan40"
+         x="258.37082"
+         y="164.13258">print</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="244.0513"
+       y="195.85049"
+       id="text41-9"><tspan
+         sodipodi:role="line"
+         id="tspan41-6"
+         x="244.0513"
+         y="195.85049"> name</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#79c0ff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="344.79739"
+       y="164.21487"
+       id="text41-3"><tspan
+         sodipodi:role="line"
+         id="tspan41-9"
+         x="344.79739"
+         y="164.21487">&quot;Hello,&quot;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#e5954f;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="373.22821"
+       y="134.69214"
+       id="text42"><tspan
+         sodipodi:role="line"
+         id="tspan42"
+         x="373.22821"
+         y="134.69214">name</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#636e7b;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="203.54642"
+       y="135.03568"
+       id="text43"><tspan
+         sodipodi:role="line"
+         id="tspan43"
+         x="203.54642"
+         y="135.03568">1</tspan><tspan
+         sodipodi:role="line"
+         x="203.54642"
+         y="165.03568"
+         id="tspan44">2</tspan><tspan
+         sodipodi:role="line"
+         x="203.54642"
+         y="195.03568"
+         id="tspan45" /><tspan
+         sodipodi:role="line"
+         x="203.54642"
+         y="225.03568"
+         id="tspan51">3</tspan><tspan
+         sodipodi:role="line"
+         x="203.54642"
+         y="255.03568"
+         id="tspan49">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="431.05151"
+       y="135.96826"
+       id="text50"><tspan
+         sodipodi:role="line"
+         id="tspan50"
+         x="431.05151"
+         y="135.96826">):</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#cea5ff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="234.924"
+       y="254.9846"
+       id="text38-4"><tspan
+         sodipodi:role="line"
+         id="tspan38-4"
+         x="234.924"
+         y="254.9846">hello</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="305.90747"
+       y="256.45685"
+       id="text39-4"><tspan
+         sodipodi:role="line"
+         id="tspan39-76"
+         x="305.90747"
+         y="256.45685">(</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#79c0ff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="320.54709"
+       y="254.84279"
+       id="text42-3"><tspan
+         sodipodi:role="line"
+         id="tspan42-1"
+         x="320.54709"
+         y="254.84279">&quot;Ready&quot;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="420.37039"
+       y="256.11893"
+       id="text50-7"><tspan
+         sodipodi:role="line"
+         id="tspan50-5"
+         x="420.37039"
+         y="256.11893">)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.7366px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.862703;stroke-dasharray:none;stroke-opacity:1"
+       x="48.371746"
+       y="67.746468"
+       id="text52"><tspan
+         sodipodi:role="line"
+         id="tspan52"
+         x="48.371746"
+         y="67.746468"
+         style="stroke-width:0.862703">Explorer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.405;stroke-dasharray:none;stroke-opacity:1"
+       x="145.65594"
+       y="73.029427"
+       id="text53"><tspan
+         sodipodi:role="line"
+         id="tspan53"
+         x="145.65594"
+         y="73.029427">···</tspan></text>
+    <rect
+       style="display:none;fill:#232830;fill-opacity:1;stroke:none;stroke-width:1.44596;stroke-dasharray:none;stroke-opacity:1"
+       id="rect53"
+       width="121.10423"
+       height="19.299412"
+       x="45.158878"
+       y="81.40464"
+       ry="3.3109989" />
+    <rect
+       style="display:none;fill:#232830;fill-opacity:1;stroke:none;stroke-width:1.36391;stroke-dasharray:none;stroke-opacity:1"
+       id="rect53-7"
+       width="107.74965"
+       height="19.299412"
+       x="52.85947"
+       y="101.60391"
+       ry="3.3109989" />
+    <rect
+       style="fill:#383f49;fill-opacity:1;stroke:none;stroke-width:1.36391;stroke-dasharray:none;stroke-opacity:1"
+       id="rect53-7-3"
+       width="107.74965"
+       height="19.299412"
+       x="52.872322"
+       y="122.19452"
+       ry="3.3109989" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.8855px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#232830;fill-opacity:1;stroke:none;stroke-width:0.871421;stroke-dasharray:none;stroke-opacity:1"
+       x="60.402493"
+       y="95.481949"
+       id="text54"><tspan
+         sodipodi:role="line"
+         id="tspan54"
+         x="60.402493"
+         y="95.481949"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.871421"> root</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.6112px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.913907;stroke-dasharray:none;stroke-opacity:1"
+       x="89.2052"
+       y="-50.324017"
+       id="text55"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan55"
+         x="89.2052"
+         y="-50.324017"
+         style="stroke-width:0.913907">›</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.0022px;writing-mode:lr-tb;direction:ltr;fill:#3a4149;fill-opacity:1;stroke:none;stroke-width:0.702632;stroke-dasharray:none;stroke-opacity:1"
+       x="59.852951"
+       y="115.53069"
+       id="text34-1"><tspan
+         sodipodi:role="line"
+         id="tspan34-8"
+         x="59.852951"
+         y="115.53069"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.702632">🗁 python</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.0022px;writing-mode:lr-tb;direction:ltr;fill:#3a4149;fill-opacity:1;stroke:none;stroke-width:0.702632;stroke-dasharray:none;stroke-opacity:1"
+       x="77.103699"
+       y="135.9518"
+       id="text34-8"><tspan
+         sodipodi:role="line"
+         id="tspan34-9"
+         x="77.103699"
+         y="135.9518"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.702632">🖹 hello.py</tspan></text>
+    <rect
+       style="fill:#232830;fill-opacity:1;stroke:none;stroke-width:1.36391;stroke-dasharray:none;stroke-opacity:1"
+       id="rect53-7-3-3"
+       width="107.74965"
+       height="19.299412"
+       x="53"
+       y="144"
+       ry="3.3109989" />
+    <text
+       xml:space="preserve"
+       style="font-size:12.0022px;writing-mode:lr-tb;direction:ltr;fill:#3a4149;fill-opacity:1;stroke:none;stroke-width:0.702632;stroke-dasharray:none;stroke-opacity:1"
+       x="77.231377"
+       y="157.75728"
+       id="text34-8-8"><tspan
+         sodipodi:role="line"
+         id="tspan34-9-6"
+         x="77.231377"
+         y="157.75728"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.702632">🖹 ready.py</tspan></text>
+  </g>
+</svg>

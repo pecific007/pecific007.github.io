@@ -10,7 +10,8 @@ export function init() {
         "Wordpress": "https://pecific007.wordpress.com",
         "Weather": "/weather_react",
         "MonkeyType": "https://monkeytype.com/profile/Pecific007",
-        "Sketchfab": "https://sketchfab.com/Minute_watchers_64"
+        "Sketchfab": "https://sketchfab.com/Minute_watchers_64",
+        "Ready": "/ready"
       }
 
       for (let site in icons) {
