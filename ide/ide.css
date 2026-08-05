@@ -1,10 +1,19 @@
 :root {
-    --padding-code: 1em;
     --bg-color-light: #22272e;
     --bg-color-dark: #1c2128;
     --font-color: #636e7b;
+    --border-color: #555555;
+    --files-button-hover: #232830;
+    --files-button-open: #383f49;
+    --inactive-tab-color: #292e35;
+    --active-tab-color: #3a4149;
+    --tab-bar-shadow-color: #272c33;
+
+    --padding-code: 1em;
+    --border-radius: 5px;
+    --border-radius-sections: .5em;
     --files-margin-left: 1em;
-    --files-button-hover: #383f49;
+    --explorer-width: 15vw;
 }
 
 * {
@@ -13,13 +22,39 @@
     padding: 0;
 }
 
-.explorer {
-    max-width: 15dvw;
-    min-width: 15dvw;
-    width: 15dvw;
-    border-right: 1px solid darkslategray;
-    background-color: var(--bg-color-dark) ;
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.content {
     padding: .5em;
+    display: flex;
+    flex: 0 1 15;
+    box-sizing: border-box;
+    gap: .5em;
+    background-color: var(--bg-color-light) ;
+    * {
+        flex-grow: 1;
+    }
+    > * {
+        min-width: 0;
+        min-height: 0;
+    }
+    height: 100dvh;
+    width:  100dvw;
+}
+
+.explorer {
+    max-width: var(--explorer-width);
+    min-width: calc(var(--explorer-width) - 5vw);
+    width:     var(--explorer-width);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color-dark) ;
+    padding: 1em;
+    border-radius: var(--border-radius-sections);
 }
 
 .explorer-label {
@@ -34,7 +69,6 @@
     .more {
         flex-grow: 0;
         width: fit-content;
-        padding-right: 1em;
         cursor: pointer;
     }
 }
@@ -46,10 +80,15 @@
     padding: .5em;
     padding-left: 4ch;
     text-align: left;
+    border-radius: var(--border-radius);
+
     &:hover {
         background-color: var(--files-button-hover);
-        border-radius: 5px;
     }
+}
+
+.file[data-active = true] {
+    background-color: var(--files-button-open);
 }
 
 .file:is(summary) {
@@ -57,27 +96,59 @@
     padding-inline: .5em;
 }
 
+.file:is(.root) {
+    width: 100%;
+    transform: translate(-.5em);
+    &::before {
+        content: '›';
+    }
+}
+
 
 .files {
     display: grid;
 }
 
-.content {
-    height: 100dvh;
-    width: 100dvw;
-    display: flex;
-    background-color: var(--bg-color-light) ;
+.hero-area {
+    height: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sections);
     overflow: auto;
-    * {
-        flex-grow: 1;
-    }
 }
 
 .editor {
-    height: 100dhv;
     display: flex;
-    overflow: auto;
-    font-family: JetBrains Mono;
+    pre, code, .code {
+        font-family: JetBrains Mono;
+    }
+}
+
+.tabs-container {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color-light);
+    padding: .5em;
+    height: max-content;
+    box-shadow: 0px 2px 5px var(--tab-bar-shadow-color);
+    display: flex;
+    gap: .5em;
+}
+
+.tab {
+    height: 100%;
+    padding: .5em;
+    padding-inline: 1em;
+    width: fit-content;
+    max-width: fit-content;
+    background-color: var(--inactive-tab-color);
+    border: none;
+    border-radius: var(--border-radius);
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.tab[data-active = true] {
+    background-color: var(--active-tab-color);
 }
 
 .line-numbers {
@@ -130,4 +201,8 @@ summary::before {
 details[open] > summary::before {
     /*transform: rotate(90deg);*/
     content: '🗁';
+}
+
+details[open] > .file:is(.root)::before {
+    transform: rotate(90deg);
 }

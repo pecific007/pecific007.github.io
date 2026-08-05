@@ -1,25 +1,87 @@
-export const sourceFiles = {
-  pages: {
-    "index.html": "/pages/index.html",
-    "art.html": "/pages/art.html",
-    "socials.html": "/pages/socials.html",
-  },
-  css: {
-    "style-general.css": "/css/style-general.css",
-    "style-index.css":   "/css/style-index.css",
-    "style-art.css":     "/css/style-art.css",
-    "style-socials.css": "/css/style-socials.css",
-  },
-  js: {
-    "main.js": "/js/main.js",
-    "index.js": "/js/index.js",
-    "art.js": "/js/art.js",
-    "socials.js": "/js/socials.js",
-  },
-  ide: {
-    "index.html": "/ide/index.html",
-    "ide.js": "/ide/ide.js",
-    "ide.css": "/ide/ide.css",
-    "file-list.js": "/ide/file-list.js",
+export const FileTree = {
+  type: "dir",
+  name: "root",
+  children: {
+    pages: {
+      type: "dir",
+      children: {
+        "index.html": {
+          type: "file",
+          name: "index.html",
+          path: "/pages/index.html",
+          language: "html",
+        },
+        "art.html": {
+          type: "file",
+          name: "art.html",
+          path: "/pages/art.html",
+          language: "html",
+        },
+        "socials.html": {
+          type: "file",
+          name: "socials.html",
+          path: "/pages/socials.html",
+          language: "html",
+        },
+      }
+    },
+    css: {
+      type: "dir",
+      children: {
+        "style-general.css": {
+          type: "file",
+          name: "style-general.css",
+          path: "/css/style-general.css",
+          language: "css",
+        },
+        "style-index.css": {
+          type: "file",
+          name: "style-index.css",
+          path: "/css/style-index.css",
+          language: "css",
+        },
+        "style-art.css": {
+          type: "file",
+          name: "style-art.css",
+          path: "/css/style-art.css",
+          language: "css",
+        },
+        "style-socials.css": {
+          type: "file",
+          name: "style-socials.css",
+          path: "/css/style-socials.css",
+          language: "css",
+        },
+      }
+    },
+    js: {
+      type: "dir",
+      children: {
+        "main.js": {
+          type: "file",
+          name: "main.js",
+          path: "/js/main.js",
+          language: "js",
+        },
+        "index.js": {
+          type: "file",
+          name: "index.js",
+          path: "/js/index.js",
+          language: "js",
+        },
+        "art.js": {
+          type: "file",
+          name: "art.js",
+          path: "/js/art.js",
+          language: "js",
+        },
+        "socials.js": {
+          type: "file",
+          name: "socials.js",
+          path: "/js/socials.js",
+          language: "js",
+        },
+      }
+    },
   }
 }
