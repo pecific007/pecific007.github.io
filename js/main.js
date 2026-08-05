@@ -24,7 +24,7 @@ function main() {
     },
   ]
 
-  const page = new URLSearchParams(location.search).get("page").toLowerCase() ?? "index";
+  const page = new URLSearchParams(location.search).get("page") ?? "index";
 
   if (page == 'index') {
     document.title = "Pecific007"
