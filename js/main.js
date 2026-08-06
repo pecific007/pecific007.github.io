@@ -137,7 +137,6 @@ function main() {
         span.classList.add("high");
       }
       const img = document.createElement("img");
-      console.log(p);
       img.classList.add("btbr_img");
       img.src = p.icon;
       img.alt = p.name;
