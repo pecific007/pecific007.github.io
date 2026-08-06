@@ -102,6 +102,28 @@ function main() {
   }
 
   async function showFooter() {
+    /*
+    This function will make:
+    ```html
+    <nav class="btmbar">
+      <a href="?page="index">
+        <span class="li">
+            <img class="btbr_img" src="./media/icons/programming-svgrepo-com.svg" alt="Programming" />
+        </span>
+      </a>
+      <a href="?page="art">
+        <span class="li">
+            <img class="btbr_img" src="./media/icons/art-palette-svgrepo-com.svg" alt="Art" />
+        </span>
+      </a>
+      <a href="?page="socials">
+        <span class="li">
+            <img class="btbr_img" src="./media/icons/social-youtube-svgrepo-com.svg" alt="Socials" />
+        </span>
+      </a>
+    </nav>
+    ```
+    */
     const navbar = document.querySelector(".btmbar");
 
     for (let p of pages) {
@@ -109,12 +131,13 @@ function main() {
       anchor.href = p.href;
       const span = document.createElement("span")
       span.classList.add("li");
-      span.title = "p.name";
+      span.title = p.name;
       if (p.id == page) {
         span.classList.add("raiseup");
         span.classList.add("high");
       }
       const img = document.createElement("img");
+      console.log(p);
       img.classList.add("btbr_img");
       img.src = p.icon;
       img.alt = p.name;
