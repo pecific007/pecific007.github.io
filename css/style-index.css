@@ -106,9 +106,9 @@
 
     display: grid;
     text-align: center;
-    border-top: 1px solid var(--purpwhite);
+    /*border-top: 1px solid var(--purpwhite);*/
     padding-top: 20px;
-    width: 100%;
+    width: fit-content;
     align-items: center;
     justify-content: center;
     .projects-list {
@@ -120,7 +120,7 @@
     .projects-item {
         padding-block: 1rem;
         width: 100%;
-        border: solid var(--border-size) var(--purpwhite);
+        /*border: solid var(--border-size) var(--purpwhite);*/
         margin-top: calc(var(--border-size) * -1);
     }
 }
@@ -179,5 +179,11 @@
     .system {
         height: 800px;
         width: 85%;
+    }
+
+
+
+    .blue_button {
+        font-size: .8em;
     }
 }

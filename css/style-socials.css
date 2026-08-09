@@ -25,11 +25,11 @@ h1 {
 }
 
 .card {
+    box-sizing: border-box;
     max-width: 50vw;
     width: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     gap: 2rem;
@@ -58,7 +58,8 @@ h1 {
     .card {
         padding: 0.5em;
         font-size: 0.9em;
-        grid-auto-flow: row;
+        flex-direction: column;
+        min-width: fit-content;
         gap: 1rem;
     }
     .card > img {

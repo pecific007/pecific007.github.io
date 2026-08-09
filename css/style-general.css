@@ -23,6 +23,7 @@ html {
   transition: all ease-in-out 0.1s;
   accent-color: var(--blueViolet);
   color-scheme: dark;
+  box-sizing: border-box;
 }
 
 body {

@@ -93,7 +93,7 @@ body {
     display: grid;
     grid-auto-flow: row;
     gap: .01em;
-    height: 80vh;
+    height: calc(100vh - 10%);
     width: 100vw;
   }
   .scroll {

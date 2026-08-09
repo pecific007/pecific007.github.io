@@ -21,17 +21,21 @@ export function init() {
         let img = el.querySelector('img');
         img.src = `media/icons/${site}.svg`;
         img.alt = `Logo: ${site}`;
-          if (site == "MonkeyType") {
-            img.style.width = "6rem";
-            img.style.paddingInline = ".5rem";
-          }
-          else if (site == "GitLab") {
-            img.style.width = "6rem";
-            img.style.height = "6rem";
-            img.style.backgroundColor = "#6650edAA";
-            img.style.borderRadius = "15px";
-            img.style.paddingInline = ".8rem";
-          }
+        if (site == "MonkeyType") {
+          img.style.width = "6rem";
+          img.style.paddingInline = ".5rem";
+        }
+        else if (site == "GitLab") {
+          img.style.width = "6rem";
+          img.style.height = "6rem";
+          img.style.backgroundColor = "#6650edAA";
+          img.style.borderRadius = "15px";
+          img.style.paddingInline = ".8rem";
+        } else if (site == "Ready" && window.innerWidth > 850) {
+          console.log(img.style.translate);
+          img.style.translate = "-10%";
+          console.log(img.style.translate);
+        }
         let btn = el.querySelector('button');
         btn.textContent = site;
         let link = el.querySelector('a');
