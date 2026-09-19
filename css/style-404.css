@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+}
+
+.content {
+    display: grid;
+    gap: 1rem;
+    place-content: center;
+    height: 100%;
+    margin-top: -5rem;
+}
+.danger-sign {
+    font-size: 10em;
+    color: yellow;
+}
+
+.error-code {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.error-message {
+    font-size: 1rem;
+    color: white;
+}
+
+.back-link {
+    color: var(--blueViolet);
+}
+.back-link:visited {
+    color: var(--purpwhite);
+}

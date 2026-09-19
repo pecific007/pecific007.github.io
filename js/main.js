@@ -71,14 +71,14 @@ function router() {
     }
   }
 
-  if (validateRoute(hash, validRoutes)) {
-    (async () => {
-      await showNavBar(hash, validRoutes);
+  (async () => {
+    await showNavBar(hash, validRoutes);
+    if (validateRoute(hash, validRoutes)) {
       await showPage(hash);
       await loadJs(hash);
-    })();
-  } else {
-    showPage('404');
-  }
+    } else {
+      showPage('404');
+    }
+  })();
   document.addEventListener('resize', showNavBar);
 }
