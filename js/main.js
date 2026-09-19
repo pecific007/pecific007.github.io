@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const validRoutes = [
   {
-    id: "index",
+    id: "home",
     icon: "/media/icons/programming-svgrepo-com.svg"
   },
   {
@@ -63,7 +63,7 @@ async function loadJs(page) {
 function router() {
   let hash;
   if (!window.location.hash || window.location.hash === '#') {
-    hash = 'index';
+    hash = 'home';
   } else {
     hash = window.location.hash;
     if (hash.startsWith('#')) {
