@@ -32,9 +32,7 @@ export function init() {
           img.style.borderRadius = "15px";
           img.style.paddingInline = ".8rem";
         } else if (site == "Ready" && window.innerWidth > 850) {
-          console.log(img.style.translate);
           img.style.translate = "-10%";
-          console.log(img.style.translate);
         }
         let btn = el.querySelector('button');
         btn.textContent = site;

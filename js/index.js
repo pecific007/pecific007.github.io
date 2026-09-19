@@ -6,7 +6,6 @@ export function init() {
 
       repos.forEach(repo => {
         const tr = document.createElement("tr");
-        console.log(tr);
         const td = document.createElement("td");
         td.classList.add("projects-item");
         const link = document.createElement("a");
