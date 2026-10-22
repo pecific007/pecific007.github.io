@@ -6,6 +6,9 @@ export function init() {
 
       repos.forEach(repo => {
         const tr = document.createElement("tr");
+        tr.classList.add("card");
+        tr.style.minWidth = "100%";
+        tr.style.marginBottom = "1rem";
         const td = document.createElement("td");
         td.classList.add("projects-item");
         const link = document.createElement("a");

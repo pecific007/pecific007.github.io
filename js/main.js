@@ -20,7 +20,6 @@ const validRoutes = [
   },
 ]
 
-/* returns a boolean */
 function validateRoute(hash, validRoutes) {
   for (let r of validRoutes) {
     if (r.id == hash) return true;
@@ -29,7 +28,7 @@ function validateRoute(hash, validRoutes) {
 }
 
 async function showNavBar(route, validRoutes) {
-  document.querySelectorAll('nav').forEach(nav => nav.remove())
+  document.querySelectorAll('nav')?.forEach(nav => nav.remove())
   showNavBottom(route, validRoutes);
   showNavTop(route, validRoutes);
 }
@@ -51,15 +50,15 @@ async function showPage(page) {
   link.href = `css/style-${page}.css`;
   document.head.append(link);
 
+  // JS
+  try {
+    const module = await import(`/js/${page}.js`);
+    module.init();
+  } catch(e) {
+    console.error(e);
+  }
 }
 
-async function loadJs(page) {
-  // JS had to be separately loaded because some pages don't use js
-  const module = await import(`/js/${page}.js`);
-  module.init();
-}
-
-/* This is the real main function */
 function router() {
   let hash;
   if (!window.location.hash || window.location.hash === '#') {
@@ -75,7 +74,6 @@ function router() {
     await showNavBar(hash, validRoutes);
     if (validateRoute(hash, validRoutes)) {
       await showPage(hash);
-      await loadJs(hash);
     } else {
       showPage('404');
     }
