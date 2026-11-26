@@ -4,12 +4,12 @@ export function init() {
       (async () => {
         const icons = await fetch("/data/socials.json").then(r => r.json()).catch(e => console.error(e));
         for (let site in icons) {
-          let el = document.createElement('a');
+          const el = document.createElement('a');
           el.classList.add('card')
           el.innerHTML = template.innerHTML;
           el.href = icons[site];
           el.target = "_blank";
-          let img = el.querySelector('img');
+          const img = el.querySelector('img');
           img.src = `media/icons/${site}.svg`;
           img.alt = `Logo: ${site}`;
           if (site == "MonkeyType") {
@@ -18,7 +18,7 @@ export function init() {
           } else if (site == "Ready" && window.innerWidth > 850) {
             img.style.translate = "-10%";
           }
-          let link = el.querySelector('button');
+          const link = el.querySelector('button');
           link.textContent = site;
           container.appendChild(el);
         }

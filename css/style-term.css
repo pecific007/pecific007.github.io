@@ -1,0 +1,35 @@
+.term {
+    max-width: 95vw;
+    border: 2px solid #9ab3fc;
+    border-radius: 10px;
+    background-color: #050514;
+    padding: 5px;
+}
+.term-main {
+    aspect-ratio: 16/9;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    font-family: monospace;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: left;
+}
+.term-title {
+    text-align: center;
+}
+.card {
+    padding: 5px;
+    border-radius: 10px;
+}
+.prompt {
+    color: #7ac4cc;
+}
+.command {
+    color: #50926b;
+}
+@media screen and (width > 800) {
+    .term-main {
+        font-size: 1em;
+    }
+}

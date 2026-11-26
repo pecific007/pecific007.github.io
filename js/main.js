@@ -73,7 +73,7 @@ function router() {
     }
   }
 
-  let valid = validateRoute(hash, validRoutes);
+  const valid = validateRoute(hash, validRoutes);
 
   (async () => {
     await showNavBar(hash, validRoutes);

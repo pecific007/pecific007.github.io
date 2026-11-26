@@ -73,7 +73,7 @@ a {
   display: flex;
   justify-content: space-around;
   padding: 10px 20px;
-  box-shadow: 1px 2px 5px #526D8299;
+  box-shadow: 1px 2px 5px oklch(from var(--color-600) l c h / .5);
   position: fixed;
   z-index: 999;
   backdrop-filter: blur(1rem);
@@ -170,13 +170,14 @@ a {
   }
 
   .bottom-navbar {
-    background-color: rgba(28, 27, 34, 0.5);
+    /*background-color: #1c1b2280;*/
+    background-color: oklch(from var(--color-900) l c h / .5);
     height: 3em;
     padding-top: 10px;
     bottom: 0;
     left: 0;
     position: fixed;
-    box-shadow: -1px -2px 5px rgba(102, 80, 237, 0.5);
+    box-shadow: -1px -2px 5px oklch(from var(--color-600) l c h / .5);
     width: 100%;
     display: flex;
     justify-content: space-around;
