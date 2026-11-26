@@ -18,12 +18,12 @@
     border-radius: 1rem;
     padding: 20px;
     display: grid;
-    cursor: context-menu;
+    cursor: default;
     filter: none;
     background: linear-gradient(
-        to bottom,
-        var(--ltblack) 80%,
-        rgba(43, 39, 255, 0.2)
+    to bottom,
+    var(--ltblack) 80%,
+    rgba(43, 39, 255, 0.2)
     );
 }
 
@@ -184,9 +184,5 @@
     .system {
         height: 800px;
         width: 85%;
-    }
-
-    .blue_button {
-        font-size: .8em;
     }
 }

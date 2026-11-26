@@ -1,5 +1,3 @@
-import { showNavBottom, showNavTop } from "/js/components.js";
-
 document.addEventListener('DOMContentLoaded', () => {
   router();
   window.addEventListener('hashchange', router);
@@ -27,10 +25,15 @@ function validateRoute(hash, validRoutes) {
   return false;
 }
 
-async function showNavBar(route, validRoutes) {
-  document.querySelectorAll('nav')?.forEach(nav => nav.remove())
-  showNavBottom(route, validRoutes);
-  showNavTop(route, validRoutes);
+async function showNavBar() {
+  if (!document.querySelector(".top-navbar")) {
+    let topNavBar = await fetch("/pages/parts/top-navbar.html").then(r => r.text());
+    document.querySelector("header").innerHTML = topNavBar;
+  }
+  if (!document.querySelector(".bottom-navbar")) {
+    let bottomNavBar = await fetch("/pages/parts/bottom-navbar.html").then(r => r.text());
+    document.body.innerHTML += bottomNavBar;
+  }
 }
 
 async function showPage(page) {
@@ -70,13 +73,16 @@ function router() {
     }
   }
 
+  let valid = validateRoute(hash, validRoutes);
+
   (async () => {
     await showNavBar(hash, validRoutes);
-    if (validateRoute(hash, validRoutes)) {
+    if (valid) {
       await showPage(hash);
     } else {
       showPage('404');
     }
   })();
-  document.addEventListener('resize', showNavBar);
+  document.querySelectorAll(".highlight-li")?.forEach(li => li.classList.remove("highlight-li"));
+  document.querySelectorAll(`[href = "/#/${hash}"`)?.forEach(e => e.querySelector(".li").classList.add("highlight-li"));
 }

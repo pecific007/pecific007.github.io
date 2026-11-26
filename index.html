@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pecific007</title>
         <link rel="icon" href="/media/icons/Logo.png" type="image/x-icon" />
-        <link id="page-style" rel="stylesheet" href="/css/style-index.css" />
+        <link id="page-style" rel="stylesheet" href="/css/style-404.css" />
         <link rel="stylesheet" href="/css/style-general.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +19,24 @@
     <body>
         <header>
         </header>
-        <main></main>
+        <main class="content">
+            <style>
+            @keyframes loading {
+                from {
+                    rotate: 0deg;
+                }
+                to {
+                    rotate: 360deg;
+                }
+            }
+            .danger-sign {
+                height: fit-content;
+                animation: loading 1s linear infinite;
+            }
+            </style>
+            <div class="danger-sign">⚆</div>
+            <h1 class="error-code">Loading...</h1>
+            <p class="error-message">If nothing changes try reloading the page.</p>
+        </main>
     </body>
 </html>
